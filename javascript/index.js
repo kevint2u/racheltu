@@ -44,7 +44,15 @@ app.config(function($stateProvider, $urlRouterProvider) {
 })
 
 app.run(function($spMenu, $rootScope) {
-    $("#menuButton").click(function(e) { e.stopPropagation();$spMenu.toggle();$("#menu-logo").attr("src","resources/R1.png");});
+    $("#menuButton").click(function(e) { 
+        e.stopPropagation();
+        $spMenu.toggle();
+        if($("#menu-logo").attr("src") != "resources/R1.png"){
+            $("#menu-logo").attr("src","resources/R1.png");
+        } else {
+            $("#menu-logo").attr("src","resources/menubutton.png");
+        }
+    });
     $('.closeMenu').click(function(){$("#menu-logo").attr("src","resources/menubutton.png");});
     // var menuHoverEnter = function(){
     //     $("#menu-logo").attr("src","resources/R1.png");
