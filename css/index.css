@@ -1,0 +1,77 @@
+@font-face {
+    font-family: Gotham-Medium;
+    src: url("../resources/Gotham/GothamHTF-Medium.otf") format("opentype");
+}
+
+body{
+    margin:0px;
+    padding:0px;
+    font-family: 'Gotham-Medium', sans-serif;
+}
+#nav-bar{
+    position: absolute;
+    height: 75px;
+    width: 100%;
+    top: 0px;
+    background-color: black;
+    opacity: 0.1;
+    color: white;
+    z-index: 100;
+}
+#nav-bar-logo{
+    height: 45px;
+    width: 45px;
+    margin: 15px;
+    border: 2px solid white;
+}
+.menu{
+  margin-top: 15px;
+}
+#content-full{
+    height: 100%;
+    width: 100%;
+}
+#content{
+    position: relative;
+    height: calc(100%-175px);
+    width: 100%;
+    margin-top: 75px;
+}
+#menuButton{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin: 12.5px;
+    border: none;
+    background-color: white;
+}
+#sp-nav{
+  background-color: grey;
+  color: white;
+}
+#sp-nav li{
+  text-decoration: none;
+  list-style-type: none;
+  padding:10px;
+  color: white;
+}
+#sp-nav a:link {
+  text-decoration: none;
+  color: white;
+}
+#sp-nav a:visited {
+  text-decoration: none;
+  color: white;
+}
+#sp-nav a:hover {
+  text-decoration: underline;
+  color: white;
+}
+#sp-nav a:active {
+  text-decoration: underline;
+  color: white;
+}
+#sp-page{
+  background-color: white;
+  color: black;
+}
