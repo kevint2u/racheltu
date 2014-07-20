@@ -50,10 +50,10 @@ app.run(function($spMenu, $rootScope) {
         if($("#menu-logo").attr("src") != "resources/R1.png"){
             $("#menu-logo").attr("src","resources/R1.png");
         } else {
-            $("#menu-logo").attr("src","resources/menubutton.png");
+            $("#menu-logo").attr("src","resources/menu-straight-01.png");
         }
     });
-    $('.closeMenu').click(function(){$("#menu-logo").attr("src","resources/menubutton.png");});
+    $('.closeMenu').click(function(){$("#menu-logo").attr("src","resources/menu-straight-01.png");});
 
     $rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams) {
         if(toState.name == "home"){
