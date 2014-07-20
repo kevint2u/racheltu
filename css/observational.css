@@ -4,19 +4,18 @@
   font-weight: 100;
   src: local('Raleway Thin'), local('Raleway-Thin'), url(http://themes.googleusercontent.com/static/fonts/raleway/v7/RJMlAoFXXQEzZoMSUteGWLO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
 }
-
 #title{
     position: relative;
     font-size: 70px;
     text-align: center;
-    font-family: 'Raleway';
     padding-top: 40px;
+    font-family: 'Raleway';
 }
 #title-subtext{
     font-size: 15px;
     text-align: center;
-    font-family: 'Raleway';
     padding-bottom: 30px;
+    font-family: 'Raleway';
 }
 #grid{
     position: relative;
@@ -53,7 +52,6 @@
     text-align: center;
     width: 100%;
     height: auto;
-    border: 1px solid blue;
 }
 .row-3img-3across-image{
     position: relative;
@@ -66,10 +64,22 @@
 
 
 .image{
-    border: 15px solid white;
+    border: 10px solid white;
 }
-
-
+.image:hover{
+    opacity: 0.5;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.overlay{
+    opacity: 0;
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.image:hover .overlay {
+    opacity:1;
+}
 
 #observational1{
     background: url("../resources/observational/observational1.png") no-repeat center;

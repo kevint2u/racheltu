@@ -110,6 +110,12 @@ app.service('gridSetupService', function () {
         var row_height = parseInt($('.row-3img-3across').css("width"))*0.75/3;
         $('.row-3img-3across-image').css("height", row_height-1);
         $('.row-3img-3across-image').css("width", row_height-1);
+    },
+    this.setupOverlayHeights = function(){
+        $('.overlay').each(function(){
+            var div_height = $(this).parent('div').height();
+            $(this).css('lineHeight', div_height + "px");
+        });
     }
 });
 app.controller("racheltuController", function($scope){
@@ -127,6 +133,7 @@ app.controller("mixedMediaController", function($scope){
 app.controller("observationalController", function($scope, gridSetupService, ngDialog){
     gridSetupService.setup3img1big2smallRow();
     gridSetupService.setup3img3acrossRow();
+    gridSetupService.setupOverlayHeights();
     $scope.clickToOpen = function (picture) {
         $scope.picture = picture;
         $scope.title = $scope.descriptions[picture]['title']
