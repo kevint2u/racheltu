@@ -45,6 +45,9 @@ body{
     border: none;
     background-color: white;
 }
+#menu-logo{
+  margin-left: -1px;
+}
 #sp-nav{
   background-color: grey;
   color: white;

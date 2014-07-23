@@ -43,7 +43,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
     });
 })
 
-app.run(function($spMenu, $rootScope) {
+app.run(function($spMenu, $rootScope, $state, $window) {
     $("#menuButton").click(function(e) { 
         e.stopPropagation();
         $spMenu.toggle();
@@ -63,6 +63,9 @@ app.run(function($spMenu, $rootScope) {
             $('#content').css("margin-top","75px");
         }
     });
+    $rootScope.goHome = function(){
+        $state.go('home');
+    };
     $rootScope.descriptions = {
         "observational1.png":{
             "title":"Naked Woman 1",
