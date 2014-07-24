@@ -3,15 +3,16 @@
 <body>
 <div ng-app="racheltu" ng-controller="popupController">
     <div class="popup-container">
-        <div class="popup-left">
-            <div class="popup-image"><img class="inner-image" src="resources/{{group}}/{{picture}}"/></div>
-        </div>
-        <div class="popup-right">
-            <h1>{{title}}</h1><br>
-            <div class="desc"><i>{{description}}</i></div>
+        <div class="picture-container" ng-repeat="picture in pictures">
+            <div class="popup-left">
+                <div class="popup-image"><img class="inner-image" src="resources/{{group}}/{{picture.src}}"/></div>
+            </div>
+            <div class="popup-right">
+                <h1>{{picture.title}}</h1><br>
+                <div class="desc"><i>{{picture.description}}</i></div>
+            </div>
         </div>
     </div>
-    <div class="placeholder">hi</div>
 </div>
 
 </body>

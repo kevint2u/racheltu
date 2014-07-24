@@ -71,11 +71,20 @@ app.run(function($spMenu, $rootScope, $state, $window, ngDialog) {
     $rootScope.goHome = function(){
         $state.go('home');
     };
-    $rootScope.clickToOpen = function (group, picture) {
+    $rootScope.clickToOpen = function (group, pictures) {
         $rootScope.group = group;
-        $rootScope.picture = picture;
-        $rootScope.title = $rootScope.descriptions[picture]['title']
-        $rootScope.description = $rootScope.descriptions[picture]['description']
+        $rootScope.pictures = {}
+        for (var index in pictures){
+            var picture = pictures[index];
+            $rootScope.pictures[picture] = {
+                "src":picture,
+                "title":$rootScope.descriptions[picture]['title'],
+                "description":$rootScope.descriptions[picture]['description']
+            }
+        }
+        // $rootScope.picture = picture;
+        // $rootScope.title = $rootScope.descriptions[picture]['title']
+        // $rootScope.description = $rootScope.descriptions[picture]['description']
         ngDialog.open({ 
             template: 'html/popup.html', 
             controller: 'popupController', 
