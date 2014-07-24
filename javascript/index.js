@@ -61,7 +61,7 @@ app.run(function($spMenu, $rootScope, $state, $window, ngDialog) {
     $('.closeMenu').click(function(){$("#menu-logo").attr("src","resources/menu-straight-01.png");});
 
     $rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams) {
-        if(toState.name == "home"){
+        if(toState.name == "home" || toState.name == "resume" || toState.name == "about"){
             $('#content').css("margin-top","0px");
         }
         else{
