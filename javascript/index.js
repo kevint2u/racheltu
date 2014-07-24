@@ -16,10 +16,15 @@ app.config(function($stateProvider, $urlRouterProvider) {
         templateUrl: 'html/graphicDesign.html',
         controller: 'graphicDesignController'
     })
-    .state('mixedMedia', {
-        url: '/mixedmedia',
-        templateUrl: 'html/mixedMedia.html',
-        controller: 'mixedMediaController'
+    .state('twoDimensional', {
+        url: '/twodimensional',
+        templateUrl: 'html/twodimensional.html',
+        controller: 'twoDimensionalController'
+    })
+    .state('threeDimensional', {
+        url: '/threedimensional',
+        templateUrl: 'html/threedimensional.html',
+        controller: 'threeDimensionalController'
     })
     .state('observational', {
         url: '/observational',
@@ -43,7 +48,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
     });
 })
 
-app.run(function($spMenu, $rootScope, $state, $window) {
+app.run(function($spMenu, $rootScope, $state, $window, ngDialog) {
     $("#menuButton").click(function(e) { 
         e.stopPropagation();
         $spMenu.toggle();
@@ -65,6 +70,16 @@ app.run(function($spMenu, $rootScope, $state, $window) {
     });
     $rootScope.goHome = function(){
         $state.go('home');
+    };
+    $rootScope.clickToOpen = function (picture) {
+        $rootScope.picture = picture;
+        $rootScope.title = $rootScope.descriptions[picture]['title']
+        $rootScope.description = $rootScope.descriptions[picture]['description']
+        ngDialog.open({ 
+            template: 'html/popup.html', 
+            controller: 'popupController', 
+            className: 'ngdialog-theme-default', 
+            scope: $rootScope});
     };
     $rootScope.descriptions = {
         "observational1.png":{
@@ -95,7 +110,7 @@ app.run(function($spMenu, $rootScope, $state, $window) {
 });
 app.service('gridSetupService', function () { 
     this.setup3img1big2smallRow = function(){
-        var row_height = parseInt($('.row-3img-1big-2small-left').css("width"))*0.75/2;
+        var row_height = parseInt($('.row-3img-1big-2small-left').css("width"))*0.5/2;
         // set container sizes
         $('.row-3img-1big-2small-left').css("height", row_height);
         $('.row-3img-1big-2small-right').css("height", row_height);
@@ -110,7 +125,7 @@ app.service('gridSetupService', function () {
         $('.row-3img-1big-2small-right-bottom-image').css("width", row_height);
     },
     this.setup3img3acrossRow = function(){
-        var row_height = parseInt($('.row-3img-3across').css("width"))*0.75/3;
+        var row_height = parseInt($('.row-3img-3across').css("width"))*0.5/3;
         $('.row-3img-3across-image').css("height", row_height-1);
         $('.row-3img-3across-image').css("width", row_height-1);
     },
@@ -127,34 +142,29 @@ app.controller("racheltuController", function($scope){
 app.controller("homeController", function($scope){
     
 });
-app.controller("graphicDesignController", function($scope){
-
-});
-app.controller("mixedMediaController", function($scope){
+app.controller("graphicDesignController", function($scope, gridSetupService, ngDialog){
 
 });
 app.controller("observationalController", function($scope, gridSetupService, ngDialog){
     gridSetupService.setup3img1big2smallRow();
     gridSetupService.setup3img3acrossRow();
     gridSetupService.setupOverlayHeights();
-    $scope.clickToOpen = function (picture) {
-        $scope.picture = picture;
-        $scope.title = $scope.descriptions[picture]['title']
-        $scope.description = $scope.descriptions[picture]['description']
-        ngDialog.open({ 
-            template: 'html/popup.html', 
-            controller: 'popupController', 
-            className: 'ngdialog-theme-default', 
-            scope: $scope});
-    };
 });
-app.controller("installationController", function($scope){
+app.controller("installationController", function($scope, gridSetupService, ngDialog){
 
 });
 app.controller("resumeController", function($scope){
 
 });
 app.controller("aboutController", function($scope){
+
+});
+app.controller("threeDimensionalController", function($scope, gridSetupService, ngDialog){
+    gridSetupService.setup3img1big2smallRow();
+    gridSetupService.setup3img3acrossRow();
+    gridSetupService.setupOverlayHeights();
+});
+app.controller("twoDimensionalController", function($scope, gridSetupService, ngDialog){
 
 });
 app.controller('popupController', function ($scope, ngDialog) {
