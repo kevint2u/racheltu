@@ -26,6 +26,8 @@ body{
     font-family: 'Gotham-Medium', sans-serif;
     width: 50%;
     float: left;
+    margin-left: 20px;
+    margin-right:-20px;
 }
 .desc{
     font-family: 'Gotham-Thin', sans-serif;

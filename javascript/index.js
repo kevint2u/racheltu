@@ -71,7 +71,8 @@ app.run(function($spMenu, $rootScope, $state, $window, ngDialog) {
     $rootScope.goHome = function(){
         $state.go('home');
     };
-    $rootScope.clickToOpen = function (picture) {
+    $rootScope.clickToOpen = function (group, picture) {
+        $rootScope.group = group;
         $rootScope.picture = picture;
         $rootScope.title = $rootScope.descriptions[picture]['title']
         $rootScope.description = $rootScope.descriptions[picture]['description']
@@ -104,6 +105,60 @@ app.run(function($spMenu, $rootScope, $state, $window, ngDialog) {
         },
         "observational6.png":{
             "title":"Naked Woman 6",
+            "description":"Filler Text Goes Here"
+        },
+
+
+        "threedimensional1-1.jpg":{
+            "title":"Fetus",
+            "description":"Filler Text Goes Here"
+        },
+        "threedimensional1-2.jpg":{
+            "title":"Fetus 2",
+            "description":"Filler Text Goes Here"
+        },
+        "threedimensional2.jpg":{
+            "title":"Branching Out",
+            "description":"Filler Text Goes Here"
+        },
+        "threedimensional3.jpg":{
+            "title":"Tic Tac Toe",
+            "description":"Filler Text Goes Here"
+        },
+        "threedimensional4.jpg":{
+            "title":"Angles and Light",
+            "description":"Filler Text Goes Here"
+        },
+        "threedimensional5-1.jpg":{
+            "title":"Man vs. Nature",
+            "description":"Filler Text Goes Here"
+        },
+        "threedimensional5-2.jpg":{
+            "title":"Man vs. Nature 2",
+            "description":"Filler Text Goes Here"
+        },
+        "threedimensional6.jpg":{
+            "title":"Skewer",
+            "description":"Filler Text Goes Here"
+        },
+        "threedimensional7-1.jpg":{
+            "title":"Wearable Fashion",
+            "description":"Filler Text Goes Here"
+        },
+        "threedimensional7-2.jpg":{
+            "title":"Wearable Fashion",
+            "description":"Filler Text Goes Here"
+        },
+        "threedimensional7-3.jpg":{
+            "title":"Wearable Fashion",
+            "description":"Filler Text Goes Here"
+        },
+        "threedimensional7-4.jpg":{
+            "title":"Wearable Fashion",
+            "description":"Filler Text Goes Here"
+        },
+        "threedimensional7-5.jpg":{
+            "title":"Wearable Fashion",
             "description":"Filler Text Goes Here"
         }
     }

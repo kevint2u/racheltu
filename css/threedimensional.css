@@ -81,28 +81,28 @@
     opacity:1;
 }
 
-#observational1{
-    background: url("../resources/observational/observational1.png") no-repeat center;
+#img-container-1{
+    background: url("../resources/threedimensional/threedimensional1-1.jpg") no-repeat center;
+    background-size:auto 100%;
+}
+#img-container-2{
+    background: url("../resources/threedimensional/threedimensional2.jpg") no-repeat center;
     background-size:100%;
 }
-#observational2{
-    background: url("../resources/observational/observational2.png") no-repeat center;
+#img-container-3{
+    background: url("../resources/threedimensional/threedimensional3.jpg") no-repeat center;
     background-size:100%;
 }
-#observational3{
-    background: url("../resources/observational/observational3.png") no-repeat center;
+#img-container-4{
+    background: url("../resources/threedimensional/threedimensional4.jpg") no-repeat center;
+    background-size:auto 100%;
+}
+#img-container-5{
+    background: url("../resources/threedimensional/threedimensional5-1.jpg") no-repeat center;
     background-size:100%;
 }
-#observational4{
-    background: url("../resources/observational/observational4.png") no-repeat center;
-    background-size:100%;
-}
-#observational5{
-    background: url("../resources/observational/observational5.png") no-repeat center;
-    background-size:100%;
-}
-#observational6{
-    background: url("../resources/observational/observational6.png") no-repeat center;
+#img-container-6{
+    background: url("../resources/threedimensional/threedimensional6.jpg") no-repeat center;
     background-size:100%;
 }
 
