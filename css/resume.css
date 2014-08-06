@@ -11,11 +11,15 @@
     overflow-y: scroll;
     width: 45%;
     height: 100%;
-    background-color:rgba(0, 0, 0, 0.2);
+    background-color:rgba(0, 0, 0, 0.5);
     color:white;
     top:125px;
     right:50px;
 }
 #inner-content{
+    font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;    padding:1em;
+    font-size: 15px;
     opacity: 1;
+    padding:1em;
+    margin-bottom: 2em;
 }
