@@ -22,7 +22,7 @@
     margin-top: 20px;
     width: 50%;
     left: 25%;
-    padding-bottom: 1200px;
+    padding-bottom: 750px;
 }
 
 
@@ -81,45 +81,29 @@
     opacity:1;
 }
 
-#twodimensional1{
-    background: url("../resources/twodimensional/twodimensional1.jpg") no-repeat center;
-    background-size:auto 100%;
-}
-#twodimensional2{
-    background: url("../resources/twodimensional/twodimensional2.jpg") no-repeat center;
+#installation1{
+    background: url("../resources/installation/installation1-1.jpg") no-repeat center;
     background-size:100%;
 }
-#twodimensional3{
-    background: url("../resources/twodimensional/twodimensional3.jpg") no-repeat center;
+#installation2{
+    background: url("../resources/installation/installation2.jpg") no-repeat center;
     background-size:100%;
 }
-#twodimensional4{
-    background: url("../resources/twodimensional/twodimensional4-1.jpg") no-repeat center;
+#installation3{
+    background: url("../resources/installation/installation3.jpg") no-repeat center;
     background-size:100%;
 }
-#twodimensional5{
-    background: url("../resources/twodimensional/twodimensional5.jpg") no-repeat center;
-    background-size:auto 100%;
-}
-#twodimensional6{
-    background: url("../resources/twodimensional/twodimensional6.jpg") no-repeat center;
+#installation4{
+    background: url("../resources/installation/installation4.jpg") no-repeat center;
     background-size:100%;
 }
-#twodimensional7{
-    background: url("../resources/twodimensional/twodimensional7.jpg") no-repeat center;
+#installation5{
+    background: url("../resources/installation/installation5.jpg") no-repeat center;
     background-size:auto 100%;
 }
-#twodimensional8{
-    background: url("../resources/twodimensional/twodimensional8.gif") no-repeat center;
-    background-size:auto 100%;
-}
-#twodimensional9{
-    background: url("../resources/twodimensional/twodimensional9.jpg") no-repeat center;
+#installation6{
+    background: url("../resources/installation/installation6-1.jpg") no-repeat center;
     background-size:100%;
-}
-#twodimensional10{
-    background: url("../resources/twodimensional/twodimensional10.jpg") no-repeat center;
-    background-size:auto 100%;
 }
 
 .footer{

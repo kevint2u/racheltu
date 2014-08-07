@@ -178,6 +178,55 @@ app.run(function($spMenu, $rootScope, $state, $window, ngDialog) {
         },
 
 
+
+
+        "twodimensional1.jpg":{
+            "title":"twodimensional1",
+            "description":"Filler Text Goes Here"
+        },
+        "twodimensional2.jpg":{
+            "title":"twodimensional2",
+            "description":"Filler Text Goes Here"
+        },
+        "twodimensional3.jpg":{
+            "title":"twodimensional3",
+            "description":"Filler Text Goes Here"
+        },
+        "twodimensional4-1.jpg":{
+            "title":"twodimensional4-1",
+            "description":"Filler Text Goes Here"
+        },
+        "twodimensional4-2.jpg":{
+            "title":"twodimensional4-2",
+            "description":"Filler Text Goes Here"
+        },
+        "twodimensional5.jpg":{
+            "title":"twodimensional5",
+            "description":"Filler Text Goes Here"
+        },
+        "twodimensional6.jpg":{
+            "title":"twodimensional6",
+            "description":"Filler Text Goes Here"
+        },
+        "twodimensional7.jpg":{
+            "title":"twodimensional7",
+            "description":"Filler Text Goes Here"
+        },
+        "twodimensional8.gif":{
+            "title":"twodimensional8",
+            "description":"Filler Text Goes Here"
+        },
+        "twodimensional9.jpg":{
+            "title":"twodimensional9",
+            "description":"Filler Text Goes Here"
+        },
+        "twodimensional10.jpg":{
+            "title":"twodimensional10",
+            "description":"Filler Text Goes Here"
+        },
+
+
+
         "threedimensional1-1.jpg":{
             "title":"Fetus",
             "description":"Filler Text Goes Here"
@@ -228,6 +277,44 @@ app.run(function($spMenu, $rootScope, $state, $window, ngDialog) {
         },
         "threedimensional7-5.jpg":{
             "title":"Wearable Fashion",
+            "description":"Filler Text Goes Here"
+        },
+
+
+        "installation1-1.jpg":{
+            "title":"installation1-1",
+            "description":"Filler Text Goes Here"
+        },
+        "installation1-2.jpg":{
+            "title":"installation1-2",
+            "description":"Filler Text Goes Here"
+        },
+        "installation2.jpg":{
+            "title":"installation2",
+            "description":"Filler Text Goes Here"
+        },
+        "installation3.jpg":{
+            "title":"installation3",
+            "description":"Filler Text Goes Here"
+        },
+        "installation4.jpg":{
+            "title":"installation4",
+            "description":"Filler Text Goes Here"
+        },
+        "installation5.jpg":{
+            "title":"installation5",
+            "description":"Filler Text Goes Here"
+        },
+        "installation6-1.jpg":{
+            "title":"installation6-1",
+            "description":"Filler Text Goes Here"
+        },
+        "installation6-1.jpg":{
+            "title":"installation6-2",
+            "description":"Filler Text Goes Here"
+        },
+        "installation1.jpg":{
+            "title":"installation1",
             "description":"Filler Text Goes Here"
         }
     }
@@ -290,7 +377,9 @@ app.controller("observationalController", function($scope, gridSetupService, ngD
     gridSetupService.setupOverlayHeights();
 });
 app.controller("installationController", function($scope, gridSetupService, ngDialog){
-
+    gridSetupService.setup3img1big2smallRow();
+    gridSetupService.setup3img3acrossRow();
+    gridSetupService.setupOverlayHeights();
 });
 app.controller("resumeController", function($scope){
 
