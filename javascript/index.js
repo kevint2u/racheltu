@@ -165,15 +165,15 @@ app.run(function($spMenu, $rootScope, $state, $window, ngDialog) {
             "description":"Filler Text Goes Here"
         },
         "observational7.jpg":{
-            "title":"Naked Woman 4",
+            "title":"Naked Woman 7",
             "description":"Filler Text Goes Here"
         },
         "observational8.jpg":{
-            "title":"Naked Woman 5",
+            "title":"Naked Woman 8",
             "description":"Filler Text Goes Here"
         },
         "observational9.jpg":{
-            "title":"Naked Woman 6",
+            "title":"Naked Woman 9",
             "description":"Filler Text Goes Here"
         },
 
