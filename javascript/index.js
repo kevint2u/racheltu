@@ -304,7 +304,9 @@ app.controller("threeDimensionalController", function($scope, gridSetupService, 
     gridSetupService.setupOverlayHeights();
 });
 app.controller("twoDimensionalController", function($scope, gridSetupService, ngDialog){
-
+    gridSetupService.setup3img1big2smallRow();
+    gridSetupService.setup3img3acrossRow();
+    gridSetupService.setupOverlayHeights();
 });
 app.controller('popupController', function ($scope, ngDialog) {
     

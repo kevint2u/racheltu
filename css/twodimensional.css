@@ -1,0 +1,174 @@
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Raleway Thin'), local('Raleway-Thin'), url(http://themes.googleusercontent.com/static/fonts/raleway/v7/RJMlAoFXXQEzZoMSUteGWLO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+#title{
+    position: relative;
+    font-size: 70px;
+    text-align: center;
+    padding-top: 40px;
+    font-family: 'Raleway';
+}
+#title-subtext{
+    font-size: 15px;
+    text-align: center;
+    padding-bottom: 30px;
+    font-family: 'Raleway';
+}
+#grid{
+    position: relative;
+    margin-top: 20px;
+    width: 50%;
+    left: 25%;
+    padding-bottom: 1200px;
+}
+
+
+/* ROW: 1 BIG 2 SMALL */
+.row-3img-1big-2small-left{
+    text-align: center;
+    float: left;
+    width: 50%;
+    height: auto;
+}
+.row-3img-1big-2small-right{
+    text-align: center;
+    float: right;
+    width: 50%;
+    height: auto;
+}
+.row-3img-1big-2small-right-top{
+    text-align: center;
+}
+.row-3img-1big-2small-right-bottom{
+    text-align: center;
+}
+
+
+/* ROW: 3 EQUAL ACROSS */
+.row-3img-3across{
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+.row-3img-3across-image{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+
+
+
+.image{
+    border: 10px solid white;
+}
+.image:hover{
+    opacity: 0.5;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.overlay{
+    opacity: 0;
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.image:hover .overlay {
+    opacity:1;
+}
+
+#observational1{
+    background: url("../resources/observational/observational1.jpg") no-repeat center;
+    background-size:100%;
+}
+#observational2{
+    background: url("../resources/observational/observational2.jpg") no-repeat center;
+    background-size:100%;
+}
+#observational3{
+    background: url("../resources/observational/observational3.jpg") no-repeat center;
+    background-size:100%;
+}
+#observational4{
+    background: url("../resources/observational/observational4.jpg") no-repeat center;
+    background-size:100%;
+}
+#observational5{
+    background: url("../resources/observational/observational5.jpg") no-repeat center;
+    background-size:auto 100%;
+}
+#observational6{
+    background: url("../resources/observational/observational6.jpg") no-repeat center;
+    background-size:100%;
+}
+#observational7{
+    background: url("../resources/observational/observational7.jpg") no-repeat center;
+    background-size:100%;
+}
+#observational8{
+    background: url("../resources/observational/observational8.jpg") no-repeat center;
+    background-size:100%;
+}
+#observational9{
+    background: url("../resources/observational/observational9.jpg") no-repeat center;
+    background-size:100%;
+}
+
+
+.footer{
+    height: 100px;
+    background-color: white;
+}
+.footer-logo{
+    position: relative;
+    text-align: center;
+    left: 50%;
+    margin-left: -25px;
+    width: 50px;
+    height: 50px;
+    background-color:white;
+    color:black;
+    background: url("../resources/R1.png") no-repeat center;
+    background-size:50px 50px;
+    opacity: 0.1;
+}
+.footer-logo:hover{
+    opacity:0.7;
+    cursor: pointer;
+}
+.footer-contact-container{
+    margin-top: 12.5px;
+    width:125px;
+    height: 75px;
+    position: relative;
+    left:50%;
+    margin-left: -62.5px;
+}
+.footer-email{
+    background: url("../resources/email1.png") no-repeat center;
+    background-size: 30px 34px;
+    width: 50px;
+    height: 50px;
+    float: left;
+    opacity: 0.1;
+}
+.footer-email:hover{
+    opacity:0.7;
+    cursor: pointer;
+}
+.footer-fb{
+    background: url("../resources/facebook1.jpg") no-repeat center;
+    background-size: 30px 30px;
+    width: 50px;
+    height: 50px;
+    float: right;
+    opacity: 0.1;
+}
+.footer-fb:hover{
+    opacity:0.7;
+    cursor: pointer;
+}
