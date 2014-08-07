@@ -140,31 +140,42 @@ app.run(function($spMenu, $rootScope, $state, $window, ngDialog) {
 
 
 
-        "observational1.png":{
+        "observational1.jpg":{
             "title":"Naked Woman 1",
             "description":"Filler Text Goes Here"
         },
-        "observational2.png":{
+        "observational2.jpg":{
             "title":"Naked Woman 2",
             "description":"Filler Text Goes Here"
         },
-        "observational3.png":{
+        "observational3.jpg":{
             "title":"Naked Woman 3",
             "description":"Filler Text Goes Here"
         },
-        "observational4.png":{
+        "observational4.jpg":{
             "title":"Naked Woman 4",
             "description":"Filler Text Goes Here"
         },
-        "observational5.png":{
+        "observational5.jpg":{
             "title":"Naked Woman 5",
             "description":"Filler Text Goes Here"
         },
-        "observational6.png":{
+        "observational6.jpg":{
             "title":"Naked Woman 6",
             "description":"Filler Text Goes Here"
         },
-
+        "observational7.jpg":{
+            "title":"Naked Woman 4",
+            "description":"Filler Text Goes Here"
+        },
+        "observational8.jpg":{
+            "title":"Naked Woman 5",
+            "description":"Filler Text Goes Here"
+        },
+        "observational9.jpg":{
+            "title":"Naked Woman 6",
+            "description":"Filler Text Goes Here"
+        },
 
 
         "threedimensional1-1.jpg":{

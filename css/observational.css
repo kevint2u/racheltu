@@ -82,30 +82,41 @@
 }
 
 #observational1{
-    background: url("../resources/observational/observational1.png") no-repeat center;
+    background: url("../resources/observational/observational1.jpg") no-repeat center;
     background-size:100%;
 }
 #observational2{
-    background: url("../resources/observational/observational2.png") no-repeat center;
+    background: url("../resources/observational/observational2.jpg") no-repeat center;
     background-size:100%;
 }
 #observational3{
-    background: url("../resources/observational/observational3.png") no-repeat center;
+    background: url("../resources/observational/observational3.jpg") no-repeat center;
     background-size:100%;
 }
 #observational4{
-    background: url("../resources/observational/observational4.png") no-repeat center;
+    background: url("../resources/observational/observational4.jpg") no-repeat center;
     background-size:100%;
 }
 #observational5{
-    background: url("../resources/observational/observational5.png") no-repeat center;
-    background-size:100%;
+    background: url("../resources/observational/observational5.jpg") no-repeat center;
+    background-size:auto 100%;
 }
 #observational6{
-    background: url("../resources/observational/observational6.png") no-repeat center;
+    background: url("../resources/observational/observational6.jpg") no-repeat center;
     background-size:100%;
 }
-
+#observational7{
+    background: url("../resources/observational/observational7.jpg") no-repeat center;
+    background-size:100%;
+}
+#observational8{
+    background: url("../resources/observational/observational8.jpg") no-repeat center;
+    background-size:100%;
+}
+#observational9{
+    background: url("../resources/observational/observational9.jpg") no-repeat center;
+    background-size:100%;
+}
 
 
 .footer{
