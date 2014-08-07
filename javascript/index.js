@@ -92,6 +92,54 @@ app.run(function($spMenu, $rootScope, $state, $window, ngDialog) {
             scope: $rootScope});
     };
     $rootScope.descriptions = {
+
+        "graphicdesign1.jpg":{
+            "title":"Fish",
+            "description":"Filler Text Goes Here"
+        },
+        "graphicdesign2.jpg":{
+            "title":"Project Runway",
+            "description":"Filler Text Goes Here"
+        },
+        "graphicdesign3.jpg":{
+            "title":"Watercolors",
+            "description":"Filler Text Goes Here"
+        },
+        "graphicdesign4.jpg":{
+            "title":"Ladder",
+            "description":"Filler Text Goes Here"
+        },
+        "graphicdesign5.jpg":{
+            "title":"Dreamcatcher",
+            "description":"Filler Text Goes Here"
+        },
+        "graphicdesign6-1.jpg":{
+            "title":"Flowers By Tulips",
+            "description":"Filler Text Goes Here"
+        },
+        "graphicdesign6-2.jpg":{
+            "title":"Flowers By Tulips",
+            "description":"Filler Text Goes Here"
+        },
+        "graphicdesign6-3.jpg":{
+            "title":"Flowers By Tulips",
+            "description":"Filler Text Goes Here"
+        },
+        "graphicdesign6-4.jpg":{
+            "title":"Flowers By Tulips",
+            "description":"Filler Text Goes Here"
+        },
+        "graphicdesign7.jpg":{
+            "title":"Blindfold",
+            "description":"Filler Text Goes Here"
+        },
+        "graphicdesign8.jpg":{
+            "title":"Faces",
+            "description":"Filler Text Goes Here"
+        },
+
+
+
         "observational1.png":{
             "title":"Naked Woman 1",
             "description":"Filler Text Goes Here"
@@ -116,6 +164,7 @@ app.run(function($spMenu, $rootScope, $state, $window, ngDialog) {
             "title":"Naked Woman 6",
             "description":"Filler Text Goes Here"
         },
+
 
 
         "threedimensional1-1.jpg":{
@@ -193,6 +242,11 @@ app.service('gridSetupService', function () {
         $('.row-3img-3across-image').css("height", row_height-1);
         $('.row-3img-3across-image').css("width", row_height-1);
     },
+    this.setup2img2acrossRow = function(){
+        var row_height = parseInt($('.row-2img-2across').css("width"))*0.5/2;
+        $('.row-2img-2across-image').css("height", row_height-1);
+        $('.row-2img-2across-image').css("width", row_height-1);
+    },
     this.setupOverlayHeights = function(){
         $('.overlay').each(function(){
             var div_height = $(this).parent('div').height();
@@ -214,7 +268,10 @@ app.controller("homeController", function($scope){
     // blink('#menuButton');
 });
 app.controller("graphicDesignController", function($scope, gridSetupService, ngDialog){
-
+    gridSetupService.setup3img1big2smallRow();
+    gridSetupService.setup3img3acrossRow();
+    gridSetupService.setup2img2acrossRow();
+    gridSetupService.setupOverlayHeights();
 });
 app.controller("observationalController", function($scope, gridSetupService, ngDialog){
     gridSetupService.setup3img1big2smallRow();
