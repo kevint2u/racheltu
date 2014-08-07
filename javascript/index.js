@@ -204,7 +204,14 @@ app.controller("racheltuController", function($scope){
 
 });
 app.controller("homeController", function($scope){
-    
+    // function blink(selector){
+    //     $('#menuButton').fadeOut('slow', function(){
+    //         $(this).fadeIn('slow', function(){
+    //             blink(this);
+    //         });
+    //     });
+    // }
+    // blink('#menuButton');
 });
 app.controller("graphicDesignController", function($scope, gridSetupService, ngDialog){
 
