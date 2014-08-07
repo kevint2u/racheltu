@@ -82,9 +82,6 @@ app.run(function($spMenu, $rootScope, $state, $window, ngDialog) {
                 "description":$rootScope.descriptions[picture]['description']
             }
         }
-        // $rootScope.picture = picture;
-        // $rootScope.title = $rootScope.descriptions[picture]['title']
-        // $rootScope.description = $rootScope.descriptions[picture]['description']
         ngDialog.open({ 
             template: 'html/popup.html', 
             controller: 'popupController', 
@@ -309,7 +306,7 @@ app.run(function($spMenu, $rootScope, $state, $window, ngDialog) {
             "title":"installation6-1",
             "description":"Filler Text Goes Here"
         },
-        "installation6-1.jpg":{
+        "installation6-2.jpg":{
             "title":"installation6-2",
             "description":"Filler Text Goes Here"
         },
