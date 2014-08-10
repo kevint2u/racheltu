@@ -45,6 +45,8 @@ body{
     margin: 15px;
     display:table-cell; 
     vertical-align:middle;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
 }
 .inner-image{
     zoom: 2; 
