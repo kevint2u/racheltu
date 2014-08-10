@@ -85,14 +85,14 @@
 }
 .overlay{
     opacity: 0;
-    font-size: 20px;
+    font-size: 50px;
     white-space: nowrap;
     overflow: hidden;
+    margin-top:-20px;
 }
 .image:hover .overlay {
     opacity:1;
 }
-
 #img-container-1{
     background: url("../resources/graphicdesign/graphicdesign1.jpg") no-repeat center;
     background-size:100%;

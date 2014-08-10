@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="resources/ngDialog-master/css/ngDialog.css" />
     <link rel="stylesheet" href="resources/ngDialog-master/css/ngDialog-theme-default.css" />
     <script type="text/javascript" src="resources/ngDialog-master/js/ngDialog.js"></script>
-    
+    <script type="text/javascript" src="resources/textFit.js"></script>
+
 
     <link rel='stylesheet' href='css/index.css'>
     <script type="text/javascript" src="javascript/index.js"></script>
@@ -23,37 +24,31 @@
 <body>
     <div ng-app="racheltu" ng-controller="racheltuController">
 
-<!--     <div id="nav-bar">
-        <div id="nav-bar-logo">
-            
+        <div id="sp-nav">
+            <!-- menu content -->
+            <ul class="menu">
+                <li><a href="#/home" ng-click="$spMenu.hide()" class="closeMenu">HOME</a></li>
+                <li><a href="#/about" ng-click="$spMenu.hide()" class="closeMenu">ABOUT</a></li>
+                <li style="margin-bottom:20px;"><a href="#/resume" ng-click="$spMenu.hide()" class="closeMenu">RESUME</a></li>
+                <li><a href="#/graphicdesign" ng-click="$spMenu.hide()" class="closeMenu">GRAPHIC DESIGN</a></li>
+                <li><a href="#/observational" ng-click="$spMenu.hide()" class="closeMenu">OBSERVATIONAL</a></li>
+                <li><a href="#/twodimensional" ng-click="$spMenu.hide()" class="closeMenu">TWO DIMENSIONAL</a></li>
+                <li><a href="#/threedimensional" ng-click="$spMenu.hide()" class="closeMenu">THREE DIMENSIONAL</a></li>
+                <li><a href="#/installation" ng-click="$spMenu.hide()" class="closeMenu">INSTALLATION</a></li>
+            </ul>
         </div>
-    </div> -->
 
-    <div id="sp-nav">
-        <!-- menu content -->
-        <ul class="menu">
-            <li><a href="#/home" ng-click="$spMenu.hide()" class="closeMenu">HOME</a></li>
-            <li><a href="#/about" ng-click="$spMenu.hide()" class="closeMenu">ABOUT</a></li>
-            <li style="margin-bottom:20px;"><a href="#/resume" ng-click="$spMenu.hide()" class="closeMenu">RESUME</a></li>
-            <li><a href="#/graphicdesign" ng-click="$spMenu.hide()" class="closeMenu">GRAPHIC DESIGN</a></li>
-            <li><a href="#/observational" ng-click="$spMenu.hide()" class="closeMenu">OBSERVATIONAL</a></li>
-            <li><a href="#/twodimensional" ng-click="$spMenu.hide()" class="closeMenu">TWO DIMENSIONAL</a></li>
-            <li><a href="#/threedimensional" ng-click="$spMenu.hide()" class="closeMenu">THREE DIMENSIONAL</a></li>
-            <li><a href="#/installation" ng-click="$spMenu.hide()" class="closeMenu">INSTALLATION</a></li>
-        </ul>
-    </div>
-
-    <div id="sp-page" ng-click="$spMenu.hide()" class="closeMenu">
-        <!-- page content -->
-        <div id="content-full">
-            <div id="nav-bar">
-                <button id="menuButton"><img id="menu-logo" src="resources/menu-straight-01.png" width="40" height="40"></img></button>
-            </div>
-            <div id="content">
-                <div ui-view></div>
-            </div>
-        </div> 
-    </div>
+        <div id="sp-page" ng-click="$spMenu.hide()" class="closeMenu">
+            <!-- page content -->
+            <div id="content-full">
+                <div id="nav-bar">
+                    <button id="menuButton"><img id="menu-logo" src="resources/menu-straight-01.png" width="40" height="40"></img></button>
+                </div>
+                <div id="content">
+                    <div ui-view></div>
+                </div>
+            </div> 
+        </div>
 
     </div>
 </body>

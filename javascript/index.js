@@ -61,6 +61,7 @@ app.run(function($spMenu, $rootScope, $state, $window, ngDialog) {
     $('.closeMenu').click(function(){$("#menu-logo").attr("src","resources/menu-straight-01.png");});
 
     $rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams) {
+        // change background to fill entire page for certain states
         if(toState.name == "home" || toState.name == "resume" || toState.name == "about"){
             $('#content').css("margin-top","0px");
         }
@@ -347,6 +348,13 @@ app.service('gridSetupService', function () {
             var div_height = $(this).parent('div').height();
             $(this).css('lineHeight', div_height + "px");
         });
+        
+    },
+    this.resizeOverlayText = function(){
+        // dynamically resize text in overlays. 
+        for(var item in document.getElementsByClassName('overlay')){
+            textFit(document.getElementsByClassName('overlay')[item], {maxFontSize: 120});
+        }
     }
 });
 app.controller("racheltuController", function($scope){
@@ -367,16 +375,19 @@ app.controller("graphicDesignController", function($scope, gridSetupService, ngD
     gridSetupService.setup3img3acrossRow();
     gridSetupService.setup2img2acrossRow();
     gridSetupService.setupOverlayHeights();
+    gridSetupService.resizeOverlayText();
 });
 app.controller("observationalController", function($scope, gridSetupService, ngDialog){
     gridSetupService.setup3img1big2smallRow();
     gridSetupService.setup3img3acrossRow();
     gridSetupService.setupOverlayHeights();
+    gridSetupService.resizeOverlayText();
 });
 app.controller("installationController", function($scope, gridSetupService, ngDialog){
     gridSetupService.setup3img1big2smallRow();
     gridSetupService.setup3img3acrossRow();
     gridSetupService.setupOverlayHeights();
+    gridSetupService.resizeOverlayText();
 });
 app.controller("resumeController", function($scope){
 
@@ -388,11 +399,13 @@ app.controller("threeDimensionalController", function($scope, gridSetupService, 
     gridSetupService.setup3img1big2smallRow();
     gridSetupService.setup3img3acrossRow();
     gridSetupService.setupOverlayHeights();
+    gridSetupService.resizeOverlayText();
 });
 app.controller("twoDimensionalController", function($scope, gridSetupService, ngDialog){
     gridSetupService.setup3img1big2smallRow();
     gridSetupService.setup3img3acrossRow();
     gridSetupService.setupOverlayHeights();
+    gridSetupService.resizeOverlayText();
 });
 app.controller('popupController', function ($scope, ngDialog) {
     
