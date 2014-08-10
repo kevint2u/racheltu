@@ -3,9 +3,9 @@
 <body>
 <div ng-app="racheltu" ng-controller="popupController">
     <div class="popup-container">
-        <div class="picture-container" ng-repeat="picture in pictures">
+        <div class="picture-container" ng-repeat="picture in pictures" ng-style="checkContainerOrientation(picture)">
             <div class="popup-left">
-                <div class="popup-image"><img class="inner-image" src="resources/{{group}}/{{picture.src}}"/></div>
+                <div class="popup-image" ng-style="checkImageOrientation(picture)"><img class="inner-image" src="resources/{{group}}/{{picture.src}}"/></div>
             </div>
             <div class="popup-right">
                 <h1>{{picture.title}}</h1><br>

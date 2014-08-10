@@ -45,8 +45,10 @@ body{
     margin: 15px;
     display:table-cell; 
     vertical-align:middle;
-    margin-bottom: 15px;
-    padding-bottom: 15px;
+    margin-bottom: 7.5px;
+    padding-bottom: 7.5px;
+    margin-top:7.5px;
+    padding-top:7.5px;
 }
 .inner-image{
     zoom: 2; 
