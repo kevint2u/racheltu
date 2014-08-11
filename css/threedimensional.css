@@ -90,7 +90,7 @@
     background-size:100%;
 }
 #img-container-3{
-    background: url("../resources/threedimensional/threedimensional3.jpg") no-repeat center;
+    background: url("../resources/threedimensional/threedimensional8-2.jpg") no-repeat center;
     background-size:100%;
 }
 #img-container-4{
@@ -109,7 +109,10 @@
     background: url("../resources/threedimensional/threedimensional7-1.jpg") no-repeat center;
     background-size:auto 100%;
 }
-
+#img-container-8{
+    background: url("../resources/threedimensional/threedimensional3.jpg") no-repeat center;
+    background-size:auto 100%;
+}
 
 .footer{
     height: 100px;

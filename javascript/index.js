@@ -321,7 +321,23 @@ app.run(function($spMenu, $rootScope, $state, $window, ngDialog) {
             "title":"Wearable Fashion",
             "description":"Filler Text Goes Here",
             "orientation":"horizontal"
+        }, 
+        "threedimensional8-1.jpg":{
+            "title":"Leopard Envelope",
+            "description":"Filler Text Goes Here",
+            "orientation":"horizontal"
+        }, 
+        "threedimensional8-2.jpg":{
+            "title":"",
+            "description":"",
+            "orientation":"horizontal"
         },
+        "threedimensional8-3.jpg":{
+            "title":"",
+            "description":"",
+            "orientation":"horizontal"
+        }, 
+
 
 
         "installation1-1.jpg":{
