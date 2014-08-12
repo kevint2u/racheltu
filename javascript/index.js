@@ -48,7 +48,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
     });
 })
 
-app.run(function($spMenu, $rootScope, $state, $window, ngDialog) {
+app.run(function($spMenu, $rootScope, $state, $window, ngDialog, gridSetupService) {
     $("#menuButton").click(function(e) { 
         e.stopPropagation();
         $spMenu.toggle();
@@ -68,6 +68,11 @@ app.run(function($spMenu, $rootScope, $state, $window, ngDialog) {
         else{
             $('#content').css("margin-top","75px");
         }
+        gridSetupService.setup3img1big2smallRow();
+        gridSetupService.setup3img3acrossRow();
+        gridSetupService.setup2img2acrossRow();
+        gridSetupService.setupOverlayHeights();
+        gridSetupService.resizeOverlayText();
     });
     $rootScope.goHome = function(){
         $state.go('home');
@@ -204,7 +209,7 @@ app.run(function($spMenu, $rootScope, $state, $window, ngDialog) {
             "description":"Filler Text Goes Here",
             "orientation":"horizontal"
         },
-        "twodimensional2.jpg":{
+        "twodimensional2.JPG":{
             "title":"twodimensional2",
             "description":"Filler Text Goes Here",
             "orientation":"vertical"
