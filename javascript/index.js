@@ -11,25 +11,20 @@ app.config(function($stateProvider, $urlRouterProvider) {
         templateUrl: 'html/home.html',
         controller: 'homeController'
     })
-    .state('graphicDesign', {
-        url: '/graphicdesign',
-        templateUrl: 'html/graphicDesign.html',
-        controller: 'graphicDesignController'
+    .state('digitalArt', {
+        url: '/digitalArt',
+        templateUrl: 'html/digitalArt.html',
+        controller: 'digitalArtController'
     })
-    .state('twoDimensional', {
-        url: '/twodimensional',
-        templateUrl: 'html/twodimensional.html',
-        controller: 'twoDimensionalController'
+    .state('studioArt', {
+        url: '/studioArt',
+        templateUrl: 'html/studioArt.html',
+        controller: 'studioArtController'
     })
-    .state('threeDimensional', {
-        url: '/threedimensional',
-        templateUrl: 'html/threedimensional.html',
-        controller: 'threeDimensionalController'
-    })
-    .state('observational', {
-        url: '/observational',
-        templateUrl: 'html/observational.html',
-        controller: 'observationalController'
+    .state('mixedMedia', {
+        url: '/mixedMedia',
+        templateUrl: 'html/mixedMedia.html',
+        controller: 'mixedMediaController'
     })
     .state('installation', {
         url: '/installation',
@@ -97,251 +92,51 @@ app.run(function($spMenu, $rootScope, $state, $window, ngDialog, gridSetupServic
     };
     $rootScope.descriptions = {
 
-        "graphicdesign1.jpg":{
-            "title":"Fish",
+        "digitalArt1.jpg":{
+            "title":"digitalArt1",
             "description":"Filler Text Goes Here",
             "orientation":"vertical"
         },
-        "graphicdesign2.jpg":{
-            "title":"Project Runway",
-            "description":"Filler Text Goes Here",
-            "orientation":"horizontal"
-        },
-        "graphicdesign3.jpg":{
-            "title":"Watercolors",
-            "description":"Filler Text Goes Here",
-            "orientation":"horizontal"
-        },
-        "graphicdesign4.jpg":{
-            "title":"Ladder",
-            "description":"Filler Text Goes Here",
-            "orientation":"vertical"
-        },
-        "graphicdesign5.jpg":{
-            "title":"Dreamcatcher",
-            "description":"Filler Text Goes Here",
-            "orientation":"vertical"
-        },
-        "graphicdesign6-1.jpg":{
-            "title":"Flowers By Tulips",
+        "digitalArt2-1.jpg":{
+            "title":"digitalArt2",
             "description":"Filler Text Goes Here",
             "orientation":"square"
         },
-        "graphicdesign6-2.jpg":{
-            "title":"Flowers By Tulips",
-            "description":"Filler Text Goes Here",
-            "orientation":"horizontal"
-        },
-        "graphicdesign6-3.jpg":{
-            "title":"Flowers By Tulips",
-            "description":"Filler Text Goes Here",
-            "orientation":"horizontal"
-        },
-        "graphicdesign6-4.jpg":{
-            "title":"Flowers By Tulips",
-            "description":"Filler Text Goes Here",
-            "orientation":"horizontal"
-        },
-        "graphicdesign7.jpg":{
-            "title":"Blindfold",
-            "description":"Filler Text Goes Here",
-            "orientation":"horizontal"
-        },
-        "graphicdesign8.jpg":{
-            "title":"Faces",
-            "description":"Filler Text Goes Here",
-            "orientation":"horizontal"
-        },
-
-
-
-        "observational1.jpg":{
-            "title":"Naked Woman 1",
-            "description":"Filler Text Goes Here",
-            "orientation":"vertical"
-        },
-        "observational2.jpg":{
-            "title":"Naked Woman 2",
-            "description":"Filler Text Goes Here",
-            "orientation":"vertical"
-        },
-        "observational3.jpg":{
-            "title":"Naked Woman 3",
-            "description":"Filler Text Goes Here",
-            "orientation":"vertical"
-        },
-        "observational4.jpg":{
-            "title":"Naked Woman 4",
-            "description":"Filler Text Goes Here",
-            "orientation":"vertical"
-        },
-        "observational5.jpg":{
-            "title":"Naked Woman 5",
-            "description":"Filler Text Goes Here",
-            "orientation":"horizontal"
-        },
-        "observational6.jpg":{
-            "title":"Naked Woman 6",
-            "description":"Filler Text Goes Here",
-            "orientation":"vertical"
-        },
-        "observational7.jpg":{
-            "title":"Naked Woman 7",
-            "description":"Filler Text Goes Here",
-            "orientation":"vertical"
-        },
-        "observational8.jpg":{
-            "title":"Naked Woman 8",
-            "description":"Filler Text Goes Here",
-            "orientation":"vertical"
-        },
-        "observational9.jpg":{
-            "title":"Naked Woman 9",
-            "description":"Filler Text Goes Here",
-            "orientation":"vertical"
-        },
-
-
-
-
-        "twodimensional1.jpg":{
-            "title":"twodimensional1",
-            "description":"Filler Text Goes Here",
-            "orientation":"horizontal"
-        },
-        "twodimensional2.JPG":{
-            "title":"twodimensional2",
-            "description":"Filler Text Goes Here",
-            "orientation":"vertical"
-        },
-        "twodimensional3.jpg":{
-            "title":"twodimensional3",
-            "description":"Filler Text Goes Here",
-            "orientation":"vertical"
-        },
-        "twodimensional4-1.jpg":{
-            "title":"twodimensional4-1",
-            "description":"Filler Text Goes Here",
-            "orientation":"vertical"
-        },
-        "twodimensional4-2.jpg":{
-            "title":"twodimensional4-2",
-            "description":"Filler Text Goes Here",
-            "orientation":"vertical"
-        },
-        "twodimensional5.jpg":{
-            "title":"twodimensional5",
-            "description":"Filler Text Goes Here",
-            "orientation":"square"
-        },
-        "twodimensional6.jpg":{
-            "title":"twodimensional6",
-            "description":"Filler Text Goes Here",
-            "orientation":"vertical"
-        },
-        "twodimensional7.jpg":{
-            "title":"twodimensional7",
-            "description":"Filler Text Goes Here",
-            "orientation":"horizontal"
-        },
-        "twodimensional8.gif":{
-            "title":"twodimensional8",
-            "description":"Filler Text Goes Here",
-            "orientation":"horizontal"
-        },
-        "twodimensional9.jpg":{
-            "title":"twodimensional9",
-            "description":"Filler Text Goes Here",
-            "orientation":"vertical"
-        },
-        "twodimensional10.jpg":{
-            "title":"twodimensional10",
-            "description":"Filler Text Goes Here",
-            "orientation":"horizontal"
-        },
-
-
-
-        "threedimensional1-1.jpg":{
-            "title":"Fetus",
-            "description":"Filler Text Goes Here",
-            "orientation":"horizontal"
-        },
-        "threedimensional1-2.jpg":{
-            "title":"Fetus 2",
-            "description":"Filler Text Goes Here",
-            "orientation":"vertical"
-        },
-        "threedimensional2.jpg":{
-            "title":"Branching Out",
-            "description":"Filler Text Goes Here",
-            "orientation":"vertical"
-        },
-        "threedimensional3.jpg":{
-            "title":"Tic Tac Toe",
-            "description":"Filler Text Goes Here",
-            "orientation":"horizontal"
-        },
-        "threedimensional4.jpg":{
-            "title":"Angles and Light",
-            "description":"Filler Text Goes Here",
-            "orientation":"horizontal"
-        },
-        "threedimensional5-1.jpg":{
-            "title":"Man vs. Nature",
-            "description":"Filler Text Goes Here",
-            "orientation":"vertical"
-        },
-        "threedimensional5-2.jpg":{
-            "title":"Man vs. Nature 2",
-            "description":"Filler Text Goes Here",
-            "orientation":"square"
-        },
-        "threedimensional6.jpg":{
-            "title":"Skewer",
-            "description":"Filler Text Goes Here",
-            "orientation":"vertical"
-        },
-        "threedimensional7-1.jpg":{
-            "title":"Wearable Fashion",
-            "description":"Filler Text Goes Here",
-            "orientation":"horizontal"
-        },
-        "threedimensional7-2.jpg":{
-            "title":"Wearable Fashion",
-            "description":"Filler Text Goes Here",
-            "orientation":"vertical"
-        },
-        "threedimensional7-3.jpg":{
-            "title":"Wearable Fashion",
-            "description":"Filler Text Goes Here",
-            "orientation":"vertical"
-        },
-        "threedimensional7-4.jpg":{
-            "title":"Wearable Fashion",
-            "description":"Filler Text Goes Here",
-            "orientation":"vertical"
-        },
-        "threedimensional7-5.jpg":{
-            "title":"Wearable Fashion",
-            "description":"Filler Text Goes Here",
-            "orientation":"horizontal"
-        }, 
-        "threedimensional8-1.jpg":{
-            "title":"Leopard Envelope",
-            "description":"Filler Text Goes Here",
-            "orientation":"horizontal"
-        }, 
-        "threedimensional8-2.jpg":{
+        "digitalArt2-2.jpg":{
             "title":"",
             "description":"",
             "orientation":"horizontal"
         },
-        "threedimensional8-3.jpg":{
+        "digitalArt2-3.jpg":{
             "title":"",
             "description":"",
             "orientation":"horizontal"
-        }, 
+        },
+        "digitalArt2-4.jpg":{
+            "title":"",
+            "description":"",
+            "orientation":"horizontal"
+        },
+        "digitalArt3.jpg":{
+            "title":"digitalArt3",
+            "description":"Filler Text Goes Here",
+            "orientation":"horizontal"
+        },
+        "digitalArt4.jpg":{
+            "title":"digitalArt4",
+            "description":"Filler Text Goes Here",
+            "orientation":"horizontal"
+        },
+        "digitalArt5.jpg":{
+            "title":"digitalArt5",
+            "description":"Filler Text Goes Here",
+            "orientation":"vertical"
+        },
+        "digitalArt6.jpg":{
+            "title":"digitalArt6",
+            "description":"Filler Text Goes Here",
+            "orientation":"horizontal"
+        },
 
 
 
@@ -440,39 +235,28 @@ app.controller("homeController", function($scope){
     // }
     // blink('#menuButton');
 });
-app.controller("graphicDesignController", function($scope, gridSetupService, ngDialog){
-    gridSetupService.setup3img1big2smallRow();
-    gridSetupService.setup3img3acrossRow();
-    gridSetupService.setup2img2acrossRow();
-    gridSetupService.setupOverlayHeights();
-    gridSetupService.resizeOverlayText();
-});
-app.controller("observationalController", function($scope, gridSetupService, ngDialog){
-    gridSetupService.setup3img1big2smallRow();
-    gridSetupService.setup3img3acrossRow();
-    gridSetupService.setupOverlayHeights();
-    gridSetupService.resizeOverlayText();
-});
-app.controller("installationController", function($scope, gridSetupService, ngDialog){
-    gridSetupService.setup3img1big2smallRow();
-    gridSetupService.setup3img3acrossRow();
-    gridSetupService.setupOverlayHeights();
-    gridSetupService.resizeOverlayText();
-});
 app.controller("resumeController", function($scope){
 
 });
 app.controller("aboutController", function($scope){
 
 });
-app.controller("threeDimensionalController", function($scope, gridSetupService, ngDialog){
-    gridSetupService.setup3img1big2smallRow();
+app.controller("digitalArtController", function($scope, gridSetupService, ngDialog){
     gridSetupService.setup3img3acrossRow();
     gridSetupService.setupOverlayHeights();
     gridSetupService.resizeOverlayText();
 });
-app.controller("twoDimensionalController", function($scope, gridSetupService, ngDialog){
-    gridSetupService.setup3img1big2smallRow();
+app.controller("studioArtController", function($scope, gridSetupService, ngDialog){
+    gridSetupService.setup3img3acrossRow();
+    gridSetupService.setupOverlayHeights();
+    gridSetupService.resizeOverlayText();
+});
+app.controller("mixedMediaController", function($scope, gridSetupService, ngDialog){
+    gridSetupService.setup3img3acrossRow();
+    gridSetupService.setupOverlayHeights();
+    gridSetupService.resizeOverlayText();
+});
+app.controller("installationController", function($scope, gridSetupService, ngDialog){
     gridSetupService.setup3img3acrossRow();
     gridSetupService.setupOverlayHeights();
     gridSetupService.resizeOverlayText();
