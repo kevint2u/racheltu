@@ -236,6 +236,86 @@ app.run(function($spMenu, $rootScope, $state, $window, ngDialog, gridSetupServic
         },
 
 
+        "mixedMedia1-1.jpg":{
+            "title":"mixedMedia1",
+            "description":"Filler Text Goes Here",
+            "orientation":"horizontal"
+        },
+        "mixedMedia1-2.jpg":{
+            "title":"",
+            "description":"",
+            "orientation":"vertical"
+        },
+        "mixedMedia2.jpg":{
+            "title":"mixedMedia2",
+            "description":"Filler Text Goes Here",
+            "orientation":"vertical"
+        },
+        "mixedMedia3-1.jpg":{
+            "title":"mixedMedia3",
+            "description":"Filler Text Goes Here",
+            "orientation":"horizontal"
+        },
+        "mixedMedia3-2.jpg":{
+            "title":"",
+            "description":"",
+            "orientation":"horizontal"
+        },
+        "mixedMedia3-3.jpg":{
+            "title":"",
+            "description":"",
+            "orientation":"horizontal"
+        },
+        "mixedMedia4.jpg":{
+            "title":"mixedMedia4",
+            "description":"Filler Text Goes Here",
+            "orientation":"horizontal"
+        },
+        "mixedMedia5-1.jpg":{
+            "title":"mixedMedia5",
+            "description":"Filler Text Goes Here",
+            "orientation":"vertical"
+        },
+        "mixedMedia5-2.jpg":{
+            "title":"",
+            "description":"",
+            "orientation":"square"
+        },
+        "mixedMedia6.jpg":{
+            "title":"mixedMedia6",
+            "description":"Filler Text Goes Here",
+            "orientation":"vertical"
+        },
+        "mixedMedia7-1.jpg":{
+            "title":"mixedMedia7",
+            "description":"Filler Text Goes Here",
+            "orientation":"horizontal"
+        },
+        "mixedMedia7-2.jpg":{
+            "title":"",
+            "description":"",
+            "orientation":"vertical"
+        },
+        "mixedMedia7-3.jpg":{
+            "title":"",
+            "description":"",
+            "orientation":"vertical"
+        },
+        "mixedMedia7-4.jpg":{
+            "title":"",
+            "description":"",
+            "orientation":"vertical"
+        },
+        "mixedMedia7-5.jpg":{
+            "title":"",
+            "description":"",
+            "orientation":"horizontal"
+        },
+        "mixedMedia8.jpg":{
+            "title":"mixedMedia8",
+            "description":"Filler Text Goes Here",
+            "orientation":"horizontal"
+        },
 
 
         "installation1-1.jpg":{
