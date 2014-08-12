@@ -139,6 +139,104 @@ app.run(function($spMenu, $rootScope, $state, $window, ngDialog, gridSetupServic
         },
 
 
+        "studioArt1.jpg":{
+            "title":"studioArt1",
+            "description":"Filler Text Goes Here",
+            "orientation":"horizontal"
+        },
+        "studioArt2.jpg":{
+            "title":"studioArt2",
+            "description":"Filler Text Goes Here",
+            "orientation":"vertical"
+        },
+        "studioArt3.jpg":{
+            "title":"studioArt3",
+            "description":"Filler Text Goes Here",
+            "orientation":"horizontal"
+        },
+        "studioArt4.jpg":{
+            "title":"studioArt4",
+            "description":"Filler Text Goes Here",
+            "orientation":"vertical"
+        },
+        "studioArt5.jpg":{
+            "title":"studioArt5",
+            "description":"Filler Text Goes Here",
+            "orientation":"vertical"
+        },
+        "studioArt6.jpg":{
+            "title":"studioArt6",
+            "description":"Filler Text Goes Here",
+            "orientation":"vertical"
+        },
+        "studioArt7.jpg":{
+            "title":"studioArt7",
+            "description":"Filler Text Goes Here",
+            "orientation":"vertical"
+        },
+        "studioArt8.jpg":{
+            "title":"studioArt8",
+            "description":"Filler Text Goes Here",
+            "orientation":"square"
+        },
+        "studioArt9.jpg":{
+            "title":"studioArt9",
+            "description":"Filler Text Goes Here",
+            "orientation":"vertical"
+        },
+        "studioArt10.jpg":{
+            "title":"studioArt10",
+            "description":"Filler Text Goes Here",
+            "orientation":"horizontal"
+        },
+        "studioArt11.jpg":{
+            "title":"studioArt11",
+            "description":"Filler Text Goes Here",
+            "orientation":"vertical"
+        },
+        "studioArt12.jpg":{
+            "title":"studioArt12",
+            "description":"Filler Text Goes Here",
+            "orientation":"vertical"
+        },
+        "studioArt13.jpg":{
+            "title":"studioArt13",
+            "description":"Filler Text Goes Here",
+            "orientation":"horizontal"
+        },
+        "studioArt14.jpg":{
+            "title":"studioArt14",
+            "description":"Filler Text Goes Here",
+            "orientation":"horizontal"
+        },
+        "studioArt15.jpg":{
+            "title":"studioArt15",
+            "description":"Filler Text Goes Here",
+            "orientation":"vertical"
+        },
+        "studioArt16.jpg":{
+            "title":"studioArt16",
+            "description":"Filler Text Goes Here",
+            "orientation":"vertical"
+        },
+        "studioArt17.jpg":{
+            "title":"studioArt17",
+            "description":"Filler Text Goes Here",
+            "orientation":"vertical"
+        },
+        "studioArt18.jpg":{
+            "title":"studioArt18",
+            "description":"Filler Text Goes Here",
+            "orientation":"horizontal"
+        },
+        "studioArt19.jpg":{
+            "title":"studioArt19",
+            "description":"Filler Text Goes Here",
+            "orientation":"vertical"
+        },
+
+
+
 
         "installation1-1.jpg":{
             "title":"installation1-1",

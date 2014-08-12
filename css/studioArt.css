@@ -22,7 +22,7 @@
     margin-top: 20px;
     width: 50%;
     left: 25%;
-    padding-bottom: 750px;
+    padding-bottom: 1800px;
 }
 
 
@@ -61,8 +61,6 @@
 }
 
 
-
-
 .image{
     border: 10px solid white;
 }
@@ -79,32 +77,88 @@
 }
 .image:hover .overlay {
     opacity:1;
+    z-index: 100;
+    background-color: white;
+    opacity: 0.5;
 }
 
-#installation1{
-    background: url("../resources/installation/installation1-1.jpg") no-repeat center;
-    background-size:100%;
-}
-#installation2{
-    background: url("../resources/installation/installation2.jpg") no-repeat center;
-    background-size:100%;
-}
-#installation3{
-    background: url("../resources/installation/installation3.jpg") no-repeat center;
-    background-size:100%;
-}
-#installation4{
-    background: url("../resources/installation/installation4.jpg") no-repeat center;
-    background-size:100%;
-}
-#installation5{
-    background: url("../resources/installation/installation5.jpg") no-repeat center;
+#img-container-1{
+    background: url("../resources/thumbnail-images/studioArt/studioArt1.jpg") no-repeat center;
     background-size:auto 100%;
 }
-#installation6{
-    background: url("../resources/installation/installation6-1.jpg") no-repeat center;
+#img-container-2{
+    background: url("../resources/thumbnail-images/studioArt/studioArt2.jpg") no-repeat center;
     background-size:100%;
 }
+#img-container-3{
+    background: url("../resources/thumbnail-images/studioArt/studioArt3.jpg") no-repeat center;
+    background-size:auto 100%;
+}
+#img-container-4{
+    background: url("../resources/thumbnail-images/studioArt/studioArt4.jpg") no-repeat center;
+    background-size:100%;
+}
+#img-container-5{
+    background: url("../resources/thumbnail-images/studioArt/studioArt5.jpg") no-repeat center;
+    background-size:100%;
+}
+#img-container-6{
+    background: url("../resources/thumbnail-images/studioArt/studioArt6.jpg") no-repeat center;
+    background-size:100%;
+}
+#img-container-7{
+    background: url("../resources/thumbnail-images/studioArt/studioArt7.jpg") no-repeat center;
+    background-size:100%;
+}
+#img-container-8{
+    background: url("../resources/thumbnail-images/studioArt/studioArt8.jpg") no-repeat center;
+    background-size:100%;
+}
+#img-container-9{
+    background: url("../resources/thumbnail-images/studioArt/studioArt9.jpg") no-repeat center;
+    background-size:100%;
+}
+#img-container-10{
+    background: url("../resources/thumbnail-images/studioArt/studioArt10.jpg") no-repeat center;
+    background-size:100%;
+}
+#img-container-11{
+    background: url("../resources/thumbnail-images/studioArt/studioArt11.jpg") no-repeat center;
+    background-size:auto 100%;
+}
+#img-container-12{
+    background: url("../resources/thumbnail-images/studioArt/studioArt12.jpg") no-repeat center;
+    background-size:100%;
+}
+#img-container-13{
+    background: url("../resources/thumbnail-images/studioArt/studioArt13.jpg") no-repeat center;
+    background-size:auto 100%;
+}
+#img-container-14{
+    background: url("../resources/thumbnail-images/studioArt/studioArt14.jpg") no-repeat center;
+    background-size:auto 100%;
+}
+#img-container-15{
+    background: url("../resources/thumbnail-images/studioArt/studioArt15.jpg") no-repeat center;
+    background-size:100%;
+}
+#img-container-16{
+    background: url("../resources/thumbnail-images/studioArt/studioArt16.jpg") no-repeat center;
+    background-size:100%;
+}
+#img-container-17{
+    background: url("../resources/thumbnail-images/studioArt/studioArt17.jpg") no-repeat center;
+    background-size:100%;
+}
+#img-container-18{
+    background: url("../resources/thumbnail-images/studioArt/studioArt18.jpg") no-repeat center;
+    background-size:auto 100%;
+}
+#img-container-19{
+    background: url("../resources/thumbnail-images/studioArt/studioArt19.jpg") no-repeat center;
+    background-size:100%;
+}
+
 
 .footer{
     height: 100px;
