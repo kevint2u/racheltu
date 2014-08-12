@@ -324,8 +324,8 @@ app.run(function($spMenu, $rootScope, $state, $window, ngDialog, gridSetupServic
             "orientation":"vertical"
         },
         "installation1-2.jpg":{
-            "title":"installation1-2",
-            "description":"Filler Text Goes Here",
+            "title":"",
+            "description":"",
             "orientation":"vertical"
         },
         "installation2.jpg":{
@@ -354,9 +354,24 @@ app.run(function($spMenu, $rootScope, $state, $window, ngDialog, gridSetupServic
             "orientation":"vertical"
         },
         "installation6-2.jpg":{
-            "title":"installation6-2",
+            "title":"",
+            "description":"",
+            "orientation":"horizontal"
+        },
+        "installation7-1.jpg":{
+            "title":"installation7",
             "description":"Filler Text Goes Here",
             "orientation":"horizontal"
+        },
+        "installation7-2.jpg":{
+            "title":"",
+            "description":"",
+            "orientation":"vertical"
+        },
+        "installation7-3.jpg":{
+            "title":"",
+            "description":"",
+            "orientation":"vertical"
         }
     }
 });

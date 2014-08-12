@@ -22,7 +22,7 @@
     margin-top: 20px;
     width: 50%;
     left: 25%;
-    padding-bottom: 750px;
+    padding-bottom: 850px;
 }
 
 
@@ -83,27 +83,31 @@
 }
 
 #img-container-1{
-    background: url("../resources/thumbnail-images/digitalArt/digitalArt1.jpg") no-repeat center;
+    background: url("../resources/thumbnail-images/installation/installation1-1.jpg") no-repeat center;
     background-size:100%;
 }
 #img-container-2{
-    background: url("../resources/thumbnail-images/digitalArt/digitalArt2-1.jpg") no-repeat center;
+    background: url("../resources/thumbnail-images/installation/installation2.jpg") no-repeat center;
     background-size:100%;
 }
 #img-container-3{
-    background: url("../resources/thumbnail-images/digitalArt/digitalArt3.jpg") no-repeat center;
+    background: url("../resources/thumbnail-images/installation/installation3.jpg") no-repeat center;
     background-size:auto 100%;
 }
 #img-container-4{
-    background: url("../resources/thumbnail-images/digitalArt/digitalArt4.jpg") no-repeat center;
-    background-size:auto 100%;
+    background: url("../resources/thumbnail-images/installation/installation4.jpg") no-repeat center;
+    background-size:100%;
 }
 #img-container-5{
-    background: url("../resources/thumbnail-images/digitalArt/digitalArt5.jpg") no-repeat center;
+    background: url("../resources/thumbnail-images/installation/installation5.jpg") no-repeat center;
     background-size:auto 100%;
 }
 #img-container-6{
-    background: url("../resources/thumbnail-images/digitalArt/digitalArt6.jpg") no-repeat center;
+    background: url("../resources/thumbnail-images/installation/installation6-2.jpg") no-repeat center;
+    background-size:auto 100%;
+}
+#img-container-7{
+    background: url("../resources/thumbnail-images/installation/installation7-1.jpg") no-repeat center;
     background-size:auto 100%;
 }
 
