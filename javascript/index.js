@@ -77,6 +77,7 @@ app.run(function($spMenu, $rootScope, $state, $window, ngDialog, gridSetupServic
         $rootScope.pictures = {}
         for (var index in pictures){
             var picture = pictures[index];
+            console.log(picture);
             $rootScope.pictures[picture] = {
                 "src":picture,
                 "title":$rootScope.descriptions[picture]['title'],
