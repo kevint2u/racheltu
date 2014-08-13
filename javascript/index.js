@@ -63,11 +63,6 @@ app.run(function($spMenu, $rootScope, $state, $window, ngDialog, gridSetupServic
         else{
             $('#content').css("margin-top","75px");
         }
-        gridSetupService.setup3img1big2smallRow();
-        gridSetupService.setup3img3acrossRow();
-        gridSetupService.setup2img2acrossRow();
-        gridSetupService.setupOverlayHeights();
-        gridSetupService.resizeOverlayText();
     });
     $rootScope.goHome = function(){
         $state.go('home');
@@ -394,6 +389,9 @@ app.service('gridSetupService', function () {
     this.setup3img3acrossRow = function(){
         console.log('setup 3img3across row');
         var row_height = parseInt($('.row-3img-3across').css("width"))*0.5/3;
+        var row_height = parseInt($(window).width()*0.5/3);
+        console.log($(window).width());
+        console.log(row_height);
         $('.row-3img-3across-image').css("height", row_height-1);
         $('.row-3img-3across-image').css("width", row_height-1);
     },
@@ -436,7 +434,6 @@ app.controller("aboutController", function($scope){
 
 });
 app.controller("digitalArtController", function($scope, gridSetupService, ngDialog){
-    console.log('calling controller');
     gridSetupService.setup3img3acrossRow();
     gridSetupService.setupOverlayHeights();
     gridSetupService.resizeOverlayText();
