@@ -17,7 +17,8 @@
     right:50px;
 }
 #inner-content{
-    font-family: Futura, "Trebuchet MS", Arial, sans-serif;    opacity: 1;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-weight: 100;
     padding:1em;
     margin-bottom: 2em;
 }
