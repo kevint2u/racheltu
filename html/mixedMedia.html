@@ -1,0 +1,56 @@
+<link rel='stylesheet' href='css/mixedMedia.css'>
+<body>
+    <div id="title">
+        Mixed Media
+    </div>
+    <div id="title-subtext">
+        "Insert deep quote about pieces and title here"
+    </div>
+
+    <div id="grid">
+
+        <div class="row-3img-3across">
+            <div id="img-container-1" class="row-3img-3across-image image" ng-click="clickToOpen('mixedmedia',['mixedmedia1-1.jpg','mixedmedia1-2.jpg'])">
+                <div class="overlay black-text">mixedmedia1</div>
+            </div>
+            <div id="img-container-2" class="row-3img-3across-image image" ng-click="clickToOpen('mixedmedia',['mixedmedia2.jpg'])">
+                <div class="overlay black-text">mixedmedia2</div>
+            </div>
+            <div id="img-container-3" class="row-3img-3across-image image" ng-click="clickToOpen('mixedmedia',['mixedmedia3-1.jpg','mixedmedia3-2.jpg','mixedmedia3-3.jpg'])">
+                <div class="overlay black-text">mixedmedia3</div>
+            </div>
+        </div>
+
+        <div class="row-3img-3across">
+            <div id="img-container-4" class="row-3img-3across-image image" ng-click="clickToOpen('mixedmedia',['mixedmedia4.jpg'])">
+                <div class="overlay black-text">mixedmedia4</div>
+            </div>
+            <div id="img-container-5" class="row-3img-3across-image image" ng-click="clickToOpen('mixedmedia',['mixedmedia5-1.jpg','mixedmedia5-2.jpg'])">
+                <div class="overlay black-text">mixedmedia5</div>
+            </div>
+            <div id="img-container-6" class="row-3img-3across-image image" ng-click="clickToOpen('mixedmedia',['mixedmedia6.jpg'])">
+                <div class="overlay black-text">mixedmedia6</div>
+            </div>
+        </div>
+
+        <div class="row-3img-3across">
+            <div id="img-container-7" class="row-3img-3across-image image" ng-click="clickToOpen('mixedmedia',['mixedmedia7-1.jpg','mixedmedia7-2.jpg','mixedmedia7-3.jpg','mixedmedia7-4.jpg','mixedmedia7-5.jpg'])">
+                <div class="overlay black-text">mixedmedia7</div>
+            </div>
+            <div id="img-container-8" class="row-3img-3across-image image" ng-click="clickToOpen('mixedmedia',['mixedmedia8.jpg'])">
+                <div class="overlay black-text">mixedmedia8</div>
+            </div>
+            <div id="img-container-9" class="row-3img-3across-image image">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="footer-logo" ng-click="goHome()"></div>
+        <div class="footer-contact-container">
+            <a target="_blank" href="mailto:rachel.k.tu@gmail.com"><div class="footer-email" ng-click="sendEmail()"></div></a>
+            <a target="_blank" href="http://facebook.com/rachel2tu"><div class="footer-fb" ng-click="goToFacebook()"></div></a>
+        </div>
+    </div>
+</body>

@@ -22,7 +22,7 @@
     margin-top: 20px;
     width: 50%;
     left: 25%;
-    padding-bottom: 750px;
+    padding-bottom: 850px;
 }
 
 
@@ -61,8 +61,6 @@
 }
 
 
-
-
 .image{
     border: 10px solid white;
 }
@@ -79,31 +77,38 @@
 }
 .image:hover .overlay {
     opacity:1;
+    z-index: 100;
+    background-color: white;
+    opacity: 0.5;
 }
 
-#installation1{
-    background: url("../resources/installation/installation1-1.jpg") no-repeat center;
+#img-container-1{
+    background: url("../resources/thumbnail-images/installation/installation1-1.jpg") no-repeat center;
     background-size:100%;
 }
-#installation2{
-    background: url("../resources/installation/installation2.jpg") no-repeat center;
+#img-container-2{
+    background: url("../resources/thumbnail-images/installation/installation2.jpg") no-repeat center;
     background-size:100%;
 }
-#installation3{
-    background: url("../resources/installation/installation3.jpg") no-repeat center;
-    background-size:100%;
-}
-#installation4{
-    background: url("../resources/installation/installation4.jpg") no-repeat center;
-    background-size:100%;
-}
-#installation5{
-    background: url("../resources/installation/installation5.jpg") no-repeat center;
+#img-container-3{
+    background: url("../resources/thumbnail-images/installation/installation3.jpg") no-repeat center;
     background-size:auto 100%;
 }
-#installation6{
-    background: url("../resources/installation/installation6-1.jpg") no-repeat center;
+#img-container-4{
+    background: url("../resources/thumbnail-images/installation/installation4.jpg") no-repeat center;
     background-size:100%;
+}
+#img-container-5{
+    background: url("../resources/thumbnail-images/installation/installation5.jpg") no-repeat center;
+    background-size:auto 100%;
+}
+#img-container-6{
+    background: url("../resources/thumbnail-images/installation/installation6-2.jpg") no-repeat center;
+    background-size:auto 100%;
+}
+#img-container-7{
+    background: url("../resources/thumbnail-images/installation/installation7-1.jpg") no-repeat center;
+    background-size:auto 100%;
 }
 
 .footer{

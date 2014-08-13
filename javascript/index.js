@@ -11,25 +11,20 @@ app.config(function($stateProvider, $urlRouterProvider) {
         templateUrl: 'html/home.html',
         controller: 'homeController'
     })
-    .state('graphicDesign', {
-        url: '/graphicdesign',
-        templateUrl: 'html/graphicDesign.html',
-        controller: 'graphicDesignController'
+    .state('digitalArt', {
+        url: '/digitalArt',
+        templateUrl: 'html/digitalArt.html',
+        controller: 'digitalArtController'
     })
-    .state('twoDimensional', {
-        url: '/twodimensional',
-        templateUrl: 'html/twodimensional.html',
-        controller: 'twoDimensionalController'
+    .state('studioArt', {
+        url: '/studioArt',
+        templateUrl: 'html/studioArt.html',
+        controller: 'studioArtController'
     })
-    .state('threeDimensional', {
-        url: '/threedimensional',
-        templateUrl: 'html/threedimensional.html',
-        controller: 'threeDimensionalController'
-    })
-    .state('observational', {
-        url: '/observational',
-        templateUrl: 'html/observational.html',
-        controller: 'observationalController'
+    .state('mixedMedia', {
+        url: '/mixedMedia',
+        templateUrl: 'html/mixedMedia.html',
+        controller: 'mixedMediaController'
     })
     .state('installation', {
         url: '/installation',
@@ -48,7 +43,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
     });
 })
 
-app.run(function($spMenu, $rootScope, $state, $window, ngDialog) {
+app.run(function($spMenu, $rootScope, $state, $window, ngDialog, gridSetupService) {
     $("#menuButton").click(function(e) { 
         e.stopPropagation();
         $spMenu.toggle();
@@ -92,233 +87,227 @@ app.run(function($spMenu, $rootScope, $state, $window, ngDialog) {
     };
     $rootScope.descriptions = {
 
-        "graphicdesign1.jpg":{
-            "title":"Fish",
+        "digitalart1.jpg":{
+            "title":"digitalart1",
             "description":"Filler Text Goes Here",
             "orientation":"vertical"
         },
-        "graphicdesign2.jpg":{
-            "title":"Project Runway",
-            "description":"Filler Text Goes Here",
-            "orientation":"horizontal"
-        },
-        "graphicdesign3.jpg":{
-            "title":"Watercolors",
-            "description":"Filler Text Goes Here",
-            "orientation":"horizontal"
-        },
-        "graphicdesign4.jpg":{
-            "title":"Ladder",
-            "description":"Filler Text Goes Here",
-            "orientation":"vertical"
-        },
-        "graphicdesign5.jpg":{
-            "title":"Dreamcatcher",
-            "description":"Filler Text Goes Here",
-            "orientation":"vertical"
-        },
-        "graphicdesign6-1.jpg":{
-            "title":"Flowers By Tulips",
+        "digitalart2-1.jpg":{
+            "title":"digitalart2",
             "description":"Filler Text Goes Here",
             "orientation":"square"
         },
-        "graphicdesign6-2.jpg":{
-            "title":"Flowers By Tulips",
+        "digitalart2-2.jpg":{
+            "title":"",
+            "description":"",
+            "orientation":"horizontal"
+        },
+        "digitalart2-3.jpg":{
+            "title":"",
+            "description":"",
+            "orientation":"horizontal"
+        },
+        "digitalart2-4.jpg":{
+            "title":"",
+            "description":"",
+            "orientation":"horizontal"
+        },
+        "digitalart3.jpg":{
+            "title":"digitalart3",
             "description":"Filler Text Goes Here",
             "orientation":"horizontal"
         },
-        "graphicdesign6-3.jpg":{
-            "title":"Flowers By Tulips",
+        "digitalart4.jpg":{
+            "title":"digitalart4",
             "description":"Filler Text Goes Here",
             "orientation":"horizontal"
         },
-        "graphicdesign6-4.jpg":{
-            "title":"Flowers By Tulips",
+        "digitalart5.jpg":{
+            "title":"digitalart5",
             "description":"Filler Text Goes Here",
-            "orientation":"horizontal"
+            "orientation":"vertical"
         },
-        "graphicdesign7.jpg":{
-            "title":"Blindfold",
-            "description":"Filler Text Goes Here",
-            "orientation":"horizontal"
-        },
-        "graphicdesign8.jpg":{
-            "title":"Faces",
+        "digitalart6.jpg":{
+            "title":"digitalart6",
             "description":"Filler Text Goes Here",
             "orientation":"horizontal"
         },
 
 
-
-        "observational1.jpg":{
-            "title":"Naked Woman 1",
-            "description":"Filler Text Goes Here",
-            "orientation":"vertical"
-        },
-        "observational2.jpg":{
-            "title":"Naked Woman 2",
-            "description":"Filler Text Goes Here",
-            "orientation":"vertical"
-        },
-        "observational3.jpg":{
-            "title":"Naked Woman 3",
-            "description":"Filler Text Goes Here",
-            "orientation":"vertical"
-        },
-        "observational4.jpg":{
-            "title":"Naked Woman 4",
-            "description":"Filler Text Goes Here",
-            "orientation":"vertical"
-        },
-        "observational5.jpg":{
-            "title":"Naked Woman 5",
+        "studioart1.jpg":{
+            "title":"studioart1",
             "description":"Filler Text Goes Here",
             "orientation":"horizontal"
         },
-        "observational6.jpg":{
-            "title":"Naked Woman 6",
+        "studioart2.jpg":{
+            "title":"studioart2",
             "description":"Filler Text Goes Here",
             "orientation":"vertical"
         },
-        "observational7.jpg":{
-            "title":"Naked Woman 7",
-            "description":"Filler Text Goes Here",
-            "orientation":"vertical"
-        },
-        "observational8.jpg":{
-            "title":"Naked Woman 8",
-            "description":"Filler Text Goes Here",
-            "orientation":"vertical"
-        },
-        "observational9.jpg":{
-            "title":"Naked Woman 9",
-            "description":"Filler Text Goes Here",
-            "orientation":"vertical"
-        },
-
-
-
-
-        "twodimensional1.jpg":{
-            "title":"twodimensional1",
+        "studioart3.jpg":{
+            "title":"studioart3",
             "description":"Filler Text Goes Here",
             "orientation":"horizontal"
         },
-        "twodimensional2.jpg":{
-            "title":"twodimensional2",
+        "studioart4.jpg":{
+            "title":"studioart4",
             "description":"Filler Text Goes Here",
             "orientation":"vertical"
         },
-        "twodimensional3.jpg":{
-            "title":"twodimensional3",
+        "studioart5.jpg":{
+            "title":"studioart5",
             "description":"Filler Text Goes Here",
             "orientation":"vertical"
         },
-        "twodimensional4-1.jpg":{
-            "title":"twodimensional4-1",
+        "studioart6.jpg":{
+            "title":"studioart6",
             "description":"Filler Text Goes Here",
             "orientation":"vertical"
         },
-        "twodimensional4-2.jpg":{
-            "title":"twodimensional4-2",
+        "studioart7.jpg":{
+            "title":"studioart7",
             "description":"Filler Text Goes Here",
             "orientation":"vertical"
         },
-        "twodimensional5.jpg":{
-            "title":"twodimensional5",
+        "studioart8.jpg":{
+            "title":"studioart8",
             "description":"Filler Text Goes Here",
             "orientation":"square"
         },
-        "twodimensional6.jpg":{
-            "title":"twodimensional6",
+        "studioart9.jpg":{
+            "title":"studioart9",
             "description":"Filler Text Goes Here",
             "orientation":"vertical"
         },
-        "twodimensional7.jpg":{
-            "title":"twodimensional7",
+        "studioart10.jpg":{
+            "title":"studioart10",
             "description":"Filler Text Goes Here",
             "orientation":"horizontal"
         },
-        "twodimensional8.gif":{
-            "title":"twodimensional8",
-            "description":"Filler Text Goes Here",
-            "orientation":"horizontal"
-        },
-        "twodimensional9.jpg":{
-            "title":"twodimensional9",
+        "studioart11.jpg":{
+            "title":"studioart11",
             "description":"Filler Text Goes Here",
             "orientation":"vertical"
         },
-        "twodimensional10.jpg":{
-            "title":"twodimensional10",
+        "studioart12.jpg":{
+            "title":"studioart12",
+            "description":"Filler Text Goes Here",
+            "orientation":"vertical"
+        },
+        "studioart13.jpg":{
+            "title":"studioart13",
             "description":"Filler Text Goes Here",
             "orientation":"horizontal"
+        },
+        "studioart14.jpg":{
+            "title":"studioart14",
+            "description":"Filler Text Goes Here",
+            "orientation":"horizontal"
+        },
+        "studioart15.jpg":{
+            "title":"studioart15",
+            "description":"Filler Text Goes Here",
+            "orientation":"vertical"
+        },
+        "studioart16.jpg":{
+            "title":"studioart16",
+            "description":"Filler Text Goes Here",
+            "orientation":"vertical"
+        },
+        "studioart17.jpg":{
+            "title":"studioart17",
+            "description":"Filler Text Goes Here",
+            "orientation":"vertical"
+        },
+        "studioart18.jpg":{
+            "title":"studioart18",
+            "description":"Filler Text Goes Here",
+            "orientation":"horizontal"
+        },
+        "studioart19.jpg":{
+            "title":"studioart19",
+            "description":"Filler Text Goes Here",
+            "orientation":"vertical"
         },
 
 
-
-        "threedimensional1-1.jpg":{
-            "title":"Fetus",
+        "mixedmedia1-1.jpg":{
+            "title":"mixedmedia1",
             "description":"Filler Text Goes Here",
             "orientation":"horizontal"
         },
-        "threedimensional1-2.jpg":{
-            "title":"Fetus 2",
+        "mixedmedia1-2.jpg":{
+            "title":"",
+            "description":"",
+            "orientation":"vertical"
+        },
+        "mixedmedia2.jpg":{
+            "title":"mixedmedia2",
             "description":"Filler Text Goes Here",
             "orientation":"vertical"
         },
-        "threedimensional2.jpg":{
-            "title":"Branching Out",
-            "description":"Filler Text Goes Here",
-            "orientation":"vertical"
-        },
-        "threedimensional3.jpg":{
-            "title":"Tic Tac Toe",
+        "mixedmedia3-1.jpg":{
+            "title":"mixedmedia3",
             "description":"Filler Text Goes Here",
             "orientation":"horizontal"
         },
-        "threedimensional4.jpg":{
-            "title":"Angles and Light",
+        "mixedmedia3-2.jpg":{
+            "title":"",
+            "description":"",
+            "orientation":"horizontal"
+        },
+        "mixedmedia3-3.jpg":{
+            "title":"",
+            "description":"",
+            "orientation":"horizontal"
+        },
+        "mixedmedia4.jpg":{
+            "title":"mixedmedia4",
             "description":"Filler Text Goes Here",
             "orientation":"horizontal"
         },
-        "threedimensional5-1.jpg":{
-            "title":"Man vs. Nature",
+        "mixedmedia5-1.jpg":{
+            "title":"mixedmedia5",
             "description":"Filler Text Goes Here",
             "orientation":"vertical"
         },
-        "threedimensional5-2.jpg":{
-            "title":"Man vs. Nature 2",
-            "description":"Filler Text Goes Here",
+        "mixedmedia5-2.jpg":{
+            "title":"",
+            "description":"",
             "orientation":"square"
         },
-        "threedimensional6.jpg":{
-            "title":"Skewer",
+        "mixedmedia6.jpg":{
+            "title":"mixedmedia6",
             "description":"Filler Text Goes Here",
             "orientation":"vertical"
         },
-        "threedimensional7-1.jpg":{
-            "title":"Wearable Fashion",
+        "mixedmedia7-1.jpg":{
+            "title":"mixedmedia7",
             "description":"Filler Text Goes Here",
             "orientation":"horizontal"
         },
-        "threedimensional7-2.jpg":{
-            "title":"Wearable Fashion",
-            "description":"Filler Text Goes Here",
+        "mixedmedia7-2.jpg":{
+            "title":"",
+            "description":"",
             "orientation":"vertical"
         },
-        "threedimensional7-3.jpg":{
-            "title":"Wearable Fashion",
-            "description":"Filler Text Goes Here",
+        "mixedmedia7-3.jpg":{
+            "title":"",
+            "description":"",
             "orientation":"vertical"
         },
-        "threedimensional7-4.jpg":{
-            "title":"Wearable Fashion",
-            "description":"Filler Text Goes Here",
+        "mixedmedia7-4.jpg":{
+            "title":"",
+            "description":"",
             "orientation":"vertical"
         },
-        "threedimensional7-5.jpg":{
-            "title":"Wearable Fashion",
+        "mixedmedia7-5.jpg":{
+            "title":"",
+            "description":"",
+            "orientation":"horizontal"
+        },
+        "mixedmedia8.jpg":{
+            "title":"mixedmedia8",
             "description":"Filler Text Goes Here",
             "orientation":"horizontal"
         },
@@ -330,8 +319,8 @@ app.run(function($spMenu, $rootScope, $state, $window, ngDialog) {
             "orientation":"vertical"
         },
         "installation1-2.jpg":{
-            "title":"installation1-2",
-            "description":"Filler Text Goes Here",
+            "title":"",
+            "description":"",
             "orientation":"vertical"
         },
         "installation2.jpg":{
@@ -360,9 +349,24 @@ app.run(function($spMenu, $rootScope, $state, $window, ngDialog) {
             "orientation":"vertical"
         },
         "installation6-2.jpg":{
-            "title":"installation6-2",
+            "title":"",
+            "description":"",
+            "orientation":"horizontal"
+        },
+        "installation7-1.jpg":{
+            "title":"installation7",
             "description":"Filler Text Goes Here",
             "orientation":"horizontal"
+        },
+        "installation7-2.jpg":{
+            "title":"",
+            "description":"",
+            "orientation":"vertical"
+        },
+        "installation7-3.jpg":{
+            "title":"",
+            "description":"",
+            "orientation":"vertical"
         }
     }
 });
@@ -383,7 +387,7 @@ app.service('gridSetupService', function () {
         $('.row-3img-1big-2small-right-bottom-image').css("width", row_height);
     },
     this.setup3img3acrossRow = function(){
-        var row_height = parseInt($('.row-3img-3across').css("width"))*0.5/3;
+        var row_height = parseInt($(window).width()*0.5/3);
         $('.row-3img-3across-image').css("height", row_height-1);
         $('.row-3img-3across-image').css("width", row_height-1);
     },
@@ -419,39 +423,28 @@ app.controller("homeController", function($scope){
     // }
     // blink('#menuButton');
 });
-app.controller("graphicDesignController", function($scope, gridSetupService, ngDialog){
-    gridSetupService.setup3img1big2smallRow();
-    gridSetupService.setup3img3acrossRow();
-    gridSetupService.setup2img2acrossRow();
-    gridSetupService.setupOverlayHeights();
-    gridSetupService.resizeOverlayText();
-});
-app.controller("observationalController", function($scope, gridSetupService, ngDialog){
-    gridSetupService.setup3img1big2smallRow();
-    gridSetupService.setup3img3acrossRow();
-    gridSetupService.setupOverlayHeights();
-    gridSetupService.resizeOverlayText();
-});
-app.controller("installationController", function($scope, gridSetupService, ngDialog){
-    gridSetupService.setup3img1big2smallRow();
-    gridSetupService.setup3img3acrossRow();
-    gridSetupService.setupOverlayHeights();
-    gridSetupService.resizeOverlayText();
-});
 app.controller("resumeController", function($scope){
 
 });
 app.controller("aboutController", function($scope){
 
 });
-app.controller("threeDimensionalController", function($scope, gridSetupService, ngDialog){
-    gridSetupService.setup3img1big2smallRow();
+app.controller("digitalArtController", function($scope, gridSetupService, ngDialog){
     gridSetupService.setup3img3acrossRow();
     gridSetupService.setupOverlayHeights();
     gridSetupService.resizeOverlayText();
 });
-app.controller("twoDimensionalController", function($scope, gridSetupService, ngDialog){
-    gridSetupService.setup3img1big2smallRow();
+app.controller("studioArtController", function($scope, gridSetupService, ngDialog){
+    gridSetupService.setup3img3acrossRow();
+    gridSetupService.setupOverlayHeights();
+    gridSetupService.resizeOverlayText();
+});
+app.controller("mixedMediaController", function($scope, gridSetupService, ngDialog){
+    gridSetupService.setup3img3acrossRow();
+    gridSetupService.setupOverlayHeights();
+    gridSetupService.resizeOverlayText();
+});
+app.controller("installationController", function($scope, gridSetupService, ngDialog){
     gridSetupService.setup3img3acrossRow();
     gridSetupService.setupOverlayHeights();
     gridSetupService.resizeOverlayText();
