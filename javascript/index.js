@@ -392,6 +392,7 @@ app.service('gridSetupService', function () {
         $('.row-3img-1big-2small-right-bottom-image').css("width", row_height);
     },
     this.setup3img3acrossRow = function(){
+        console.log('setup 3img3across row');
         var row_height = parseInt($('.row-3img-3across').css("width"))*0.5/3;
         $('.row-3img-3across-image').css("height", row_height-1);
         $('.row-3img-3across-image').css("width", row_height-1);
@@ -435,6 +436,7 @@ app.controller("aboutController", function($scope){
 
 });
 app.controller("digitalArtController", function($scope, gridSetupService, ngDialog){
+    console.log('calling controller');
     gridSetupService.setup3img3acrossRow();
     gridSetupService.setupOverlayHeights();
     gridSetupService.resizeOverlayText();
