@@ -92,227 +92,227 @@ app.run(function($spMenu, $rootScope, $state, $window, ngDialog, gridSetupServic
     };
     $rootScope.descriptions = {
 
-        "digitalArt1.jpg":{
-            "title":"digitalArt1",
+        "digitalart1.jpg":{
+            "title":"digitalart1",
             "description":"Filler Text Goes Here",
             "orientation":"vertical"
         },
-        "digitalArt2-1.jpg":{
-            "title":"digitalArt2",
+        "digitalart2-1.jpg":{
+            "title":"digitalart2",
             "description":"Filler Text Goes Here",
             "orientation":"square"
         },
-        "digitalArt2-2.jpg":{
+        "digitalart2-2.jpg":{
             "title":"",
             "description":"",
             "orientation":"horizontal"
         },
-        "digitalArt2-3.jpg":{
+        "digitalart2-3.jpg":{
             "title":"",
             "description":"",
             "orientation":"horizontal"
         },
-        "digitalArt2-4.jpg":{
+        "digitalart2-4.jpg":{
             "title":"",
             "description":"",
             "orientation":"horizontal"
         },
-        "digitalArt3.jpg":{
-            "title":"digitalArt3",
+        "digitalart3.jpg":{
+            "title":"digitalart3",
             "description":"Filler Text Goes Here",
             "orientation":"horizontal"
         },
-        "digitalArt4.jpg":{
-            "title":"digitalArt4",
+        "digitalart4.jpg":{
+            "title":"digitalart4",
             "description":"Filler Text Goes Here",
             "orientation":"horizontal"
         },
-        "digitalArt5.jpg":{
-            "title":"digitalArt5",
+        "digitalart5.jpg":{
+            "title":"digitalart5",
             "description":"Filler Text Goes Here",
             "orientation":"vertical"
         },
-        "digitalArt6.jpg":{
-            "title":"digitalArt6",
+        "digitalart6.jpg":{
+            "title":"digitalart6",
             "description":"Filler Text Goes Here",
             "orientation":"horizontal"
         },
 
 
-        "studioArt1.jpg":{
-            "title":"studioArt1",
+        "studioart1.jpg":{
+            "title":"studioart1",
             "description":"Filler Text Goes Here",
             "orientation":"horizontal"
         },
-        "studioArt2.jpg":{
-            "title":"studioArt2",
+        "studioart2.jpg":{
+            "title":"studioart2",
             "description":"Filler Text Goes Here",
             "orientation":"vertical"
         },
-        "studioArt3.jpg":{
-            "title":"studioArt3",
+        "studioart3.jpg":{
+            "title":"studioart3",
             "description":"Filler Text Goes Here",
             "orientation":"horizontal"
         },
-        "studioArt4.jpg":{
-            "title":"studioArt4",
+        "studioart4.jpg":{
+            "title":"studioart4",
             "description":"Filler Text Goes Here",
             "orientation":"vertical"
         },
-        "studioArt5.jpg":{
-            "title":"studioArt5",
+        "studioart5.jpg":{
+            "title":"studioart5",
             "description":"Filler Text Goes Here",
             "orientation":"vertical"
         },
-        "studioArt6.jpg":{
-            "title":"studioArt6",
+        "studioart6.jpg":{
+            "title":"studioart6",
             "description":"Filler Text Goes Here",
             "orientation":"vertical"
         },
-        "studioArt7.jpg":{
-            "title":"studioArt7",
+        "studioart7.jpg":{
+            "title":"studioart7",
             "description":"Filler Text Goes Here",
             "orientation":"vertical"
         },
-        "studioArt8.jpg":{
-            "title":"studioArt8",
+        "studioart8.jpg":{
+            "title":"studioart8",
             "description":"Filler Text Goes Here",
             "orientation":"square"
         },
-        "studioArt9.jpg":{
-            "title":"studioArt9",
+        "studioart9.jpg":{
+            "title":"studioart9",
             "description":"Filler Text Goes Here",
             "orientation":"vertical"
         },
-        "studioArt10.jpg":{
-            "title":"studioArt10",
+        "studioart10.jpg":{
+            "title":"studioart10",
             "description":"Filler Text Goes Here",
             "orientation":"horizontal"
         },
-        "studioArt11.jpg":{
-            "title":"studioArt11",
+        "studioart11.jpg":{
+            "title":"studioart11",
             "description":"Filler Text Goes Here",
             "orientation":"vertical"
         },
-        "studioArt12.jpg":{
-            "title":"studioArt12",
+        "studioart12.jpg":{
+            "title":"studioart12",
             "description":"Filler Text Goes Here",
             "orientation":"vertical"
         },
-        "studioArt13.jpg":{
-            "title":"studioArt13",
+        "studioart13.jpg":{
+            "title":"studioart13",
             "description":"Filler Text Goes Here",
             "orientation":"horizontal"
         },
-        "studioArt14.jpg":{
-            "title":"studioArt14",
+        "studioart14.jpg":{
+            "title":"studioart14",
             "description":"Filler Text Goes Here",
             "orientation":"horizontal"
         },
-        "studioArt15.jpg":{
-            "title":"studioArt15",
+        "studioart15.jpg":{
+            "title":"studioart15",
             "description":"Filler Text Goes Here",
             "orientation":"vertical"
         },
-        "studioArt16.jpg":{
-            "title":"studioArt16",
+        "studioart16.jpg":{
+            "title":"studioart16",
             "description":"Filler Text Goes Here",
             "orientation":"vertical"
         },
-        "studioArt17.jpg":{
-            "title":"studioArt17",
+        "studioart17.jpg":{
+            "title":"studioart17",
             "description":"Filler Text Goes Here",
             "orientation":"vertical"
         },
-        "studioArt18.jpg":{
-            "title":"studioArt18",
+        "studioart18.jpg":{
+            "title":"studioart18",
             "description":"Filler Text Goes Here",
             "orientation":"horizontal"
         },
-        "studioArt19.jpg":{
-            "title":"studioArt19",
+        "studioart19.jpg":{
+            "title":"studioart19",
             "description":"Filler Text Goes Here",
             "orientation":"vertical"
         },
 
 
-        "mixedMedia1-1.jpg":{
-            "title":"mixedMedia1",
+        "mixedmedia1-1.jpg":{
+            "title":"mixedmedia1",
             "description":"Filler Text Goes Here",
             "orientation":"horizontal"
         },
-        "mixedMedia1-2.jpg":{
+        "mixedmedia1-2.jpg":{
             "title":"",
             "description":"",
             "orientation":"vertical"
         },
-        "mixedMedia2.jpg":{
-            "title":"mixedMedia2",
+        "mixedmedia2.jpg":{
+            "title":"mixedmedia2",
             "description":"Filler Text Goes Here",
             "orientation":"vertical"
         },
-        "mixedMedia3-1.jpg":{
-            "title":"mixedMedia3",
+        "mixedmedia3-1.jpg":{
+            "title":"mixedmedia3",
             "description":"Filler Text Goes Here",
             "orientation":"horizontal"
         },
-        "mixedMedia3-2.jpg":{
+        "mixedmedia3-2.jpg":{
             "title":"",
             "description":"",
             "orientation":"horizontal"
         },
-        "mixedMedia3-3.jpg":{
+        "mixedmedia3-3.jpg":{
             "title":"",
             "description":"",
             "orientation":"horizontal"
         },
-        "mixedMedia4.jpg":{
-            "title":"mixedMedia4",
+        "mixedmedia4.jpg":{
+            "title":"mixedmedia4",
             "description":"Filler Text Goes Here",
             "orientation":"horizontal"
         },
-        "mixedMedia5-1.jpg":{
-            "title":"mixedMedia5",
+        "mixedmedia5-1.jpg":{
+            "title":"mixedmedia5",
             "description":"Filler Text Goes Here",
             "orientation":"vertical"
         },
-        "mixedMedia5-2.jpg":{
+        "mixedmedia5-2.jpg":{
             "title":"",
             "description":"",
             "orientation":"square"
         },
-        "mixedMedia6.jpg":{
-            "title":"mixedMedia6",
+        "mixedmedia6.jpg":{
+            "title":"mixedmedia6",
             "description":"Filler Text Goes Here",
             "orientation":"vertical"
         },
-        "mixedMedia7-1.jpg":{
-            "title":"mixedMedia7",
+        "mixedmedia7-1.jpg":{
+            "title":"mixedmedia7",
             "description":"Filler Text Goes Here",
             "orientation":"horizontal"
         },
-        "mixedMedia7-2.jpg":{
+        "mixedmedia7-2.jpg":{
             "title":"",
             "description":"",
             "orientation":"vertical"
         },
-        "mixedMedia7-3.jpg":{
+        "mixedmedia7-3.jpg":{
             "title":"",
             "description":"",
             "orientation":"vertical"
         },
-        "mixedMedia7-4.jpg":{
+        "mixedmedia7-4.jpg":{
             "title":"",
             "description":"",
             "orientation":"vertical"
         },
-        "mixedMedia7-5.jpg":{
+        "mixedmedia7-5.jpg":{
             "title":"",
             "description":"",
             "orientation":"horizontal"
         },
-        "mixedMedia8.jpg":{
-            "title":"mixedMedia8",
+        "mixedmedia8.jpg":{
+            "title":"mixedmedia8",
             "description":"Filler Text Goes Here",
             "orientation":"horizontal"
         },

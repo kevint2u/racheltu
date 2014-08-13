@@ -83,27 +83,27 @@
 }
 
 #img-container-1{
-    background: url("resources/thumbnails/digitalArt/digitalArt1.jpg") no-repeat center;
+    background: url("../resources/thumbnail-images/digitalart/digitalart1.jpg") no-repeat center;
     background-size:100%;
 }
 #img-container-2{
-    background: url("resources/thumbnails/digitalArt/digitalArt2-1.jpg") no-repeat center;
+    background: url("../resources/thumbnail-images/digitalart/digitalart2-1.jpg") no-repeat center;
     background-size:100%;
 }
 #img-container-3{
-    background: url("resources/thumbnails/digitalArt/digitalArt3.jpg") no-repeat center;
+    background: url("../resources/thumbnail-images/digitalart/digitalart3.jpg") no-repeat center;
     background-size:auto 100%;
 }
 #img-container-4{
-    background: url("resources/thumbnails/digitalArt/digitalArt4.jpg") no-repeat center;
+    background: url("../resources/thumbnail-images/digitalart/digitalart4.jpg") no-repeat center;
     background-size:auto 100%;
 }
 #img-container-5{
-    background: url("resources/thumbnails/digitalArt/digitalArt5.jpg") no-repeat center;
+    background: url("../resources/thumbnail-images/digitalart/digitalart5.jpg") no-repeat center;
     background-size:auto 100%;
 }
 #img-container-6{
-    background: url("resources/thumbnails/digitalArt/digitalArt6.jpg") no-repeat center;
+    background: url("../resources/thumbnail-images/digitalart/digitalart6.jpg") no-repeat center;
     background-size:auto 100%;
 }
 
