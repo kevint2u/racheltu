@@ -159,10 +159,10 @@ app.run(function($spMenu, $rootScope, $state, $window, ngDialog, gridSetupServic
             "description":"Filler Text Goes Here",
             "orientation":"vertical"
         },
-        "studioart5.jpg":{
+        "studioart5.gif":{
             "title":"studioart5",
             "description":"Filler Text Goes Here",
-            "orientation":"vertical"
+            "orientation":"horizontal"
         },
         "studioart6.jpg":{
             "title":"studioart6",
@@ -202,7 +202,7 @@ app.run(function($spMenu, $rootScope, $state, $window, ngDialog, gridSetupServic
         "studioart13.jpg":{
             "title":"studioart13",
             "description":"Filler Text Goes Here",
-            "orientation":"horizontal"
+            "orientation":"vertical"
         },
         "studioart14.jpg":{
             "title":"studioart14",
@@ -217,7 +217,7 @@ app.run(function($spMenu, $rootScope, $state, $window, ngDialog, gridSetupServic
         "studioart16.jpg":{
             "title":"studioart16",
             "description":"Filler Text Goes Here",
-            "orientation":"vertical"
+            "orientation":"horizontal"
         },
         "studioart17.jpg":{
             "title":"studioart17",
@@ -261,6 +261,16 @@ app.run(function($spMenu, $rootScope, $state, $window, ngDialog, gridSetupServic
         },
         "studioart25.jpg":{
             "title":"studioart25",
+            "description":"Filler Text Goes Here",
+            "orientation":"vertical"
+        },
+        "studioart26.jpg":{
+            "title":"studioart26",
+            "description":"Filler Text Goes Here",
+            "orientation":"vertical"
+        },
+        "studioart27.jpg":{
+            "title":"studioart27",
             "description":"Filler Text Goes Here",
             "orientation":"vertical"
         },
