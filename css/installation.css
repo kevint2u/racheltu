@@ -103,8 +103,8 @@
     background-size:auto 100%;
 }
 #img-container-6{
-    background: url("../resources/thumbnail-images/installation/installation6-2.jpg") no-repeat center;
-    background-size:auto 100%;
+    background: url("../resources/thumbnail-images/installation/installation6-1.jpg") no-repeat center;
+    background-size:100% auto;
 }
 #img-container-7{
     background: url("../resources/thumbnail-images/installation/installation7-1.jpg") no-repeat center;

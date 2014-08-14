@@ -22,7 +22,7 @@
     margin-top: 20px;
     width: 50%;
     left: 25%;
-    padding-bottom: 1800px;
+    padding-bottom: 2000px;
 }
 
 
@@ -157,6 +157,31 @@
 #img-container-19{
     background: url("../resources/thumbnail-images/studioart/studioart19.jpg") no-repeat center;
     background-size:100%;
+}
+
+#img-container-20{
+    background: url("../resources/thumbnail-images/studioart/studioart20.jpg") no-repeat center;
+    background-size:auto 100%;
+}
+#img-container-21{
+    background: url("../resources/thumbnail-images/studioart/studioart21.jpg") no-repeat center;
+    background-size:auto 100%;
+}
+#img-container-22{
+    background: url("../resources/thumbnail-images/studioart/studioart22.jpg") no-repeat center;
+    background-size:100%;
+}
+#img-container-23{
+    background: url("../resources/thumbnail-images/studioart/studioart23.jpg") no-repeat center;
+    background-size:auto 100%;
+}
+#img-container-24{
+    background: url("../resources/thumbnail-images/studioart/studioart24.jpg") no-repeat center;
+    background-size:100%;
+}
+#img-container-25{
+    background: url("../resources/thumbnail-images/studioart/studioart25.jpg") no-repeat center;
+    background-size:100% auto;
 }
 
 

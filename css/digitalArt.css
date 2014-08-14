@@ -106,6 +106,10 @@
     background: url("../resources/thumbnail-images/digitalart/digitalart6.jpg") no-repeat center;
     background-size:auto 100%;
 }
+#img-container-7{
+    background: url("../resources/thumbnail-images/digitalart/digitalart7.jpg") no-repeat center;
+    background-size:auto 100%;
+}
 
 .footer{
     height: 100px;
