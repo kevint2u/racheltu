@@ -259,7 +259,7 @@ app.run(function($spMenu, $rootScope, $state, $window, ngDialog, gridSetupServic
             "description":"Filler Text Goes Here",
             "orientation":"vertical"
         },
-        "studioart25.jpg":{
+        "studioart25.JPG":{
             "title":"studioart25",
             "description":"Filler Text Goes Here",
             "orientation":"vertical"
