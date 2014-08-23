@@ -112,6 +112,11 @@ app.run(function($spMenu, $rootScope, $state, $window, ngDialog, gridSetupServic
             "description":"",
             "orientation":"horizontal"
         },
+         "digitalart2-5.jpg":{
+            "title":"",
+            "description":"",
+            "orientation":"horizontal"
+        },
         "digitalart3.jpg":{
             "title":"digitalart3",
             "description":"Filler Text Goes Here",
