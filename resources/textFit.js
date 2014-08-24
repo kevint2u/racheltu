@@ -33,9 +33,9 @@
       alignHoriz: true, // if true, textFit will set text-align: center
       multiLine: false, // if true, textFit will not set white-space: no-wrap
       detectMultiLine: true, // disable to turn off automatic multi-line sensing
-      minFontSize: 6,
-      maxFontSize: 80,
-      reProcess: false, // if true, textFit will re-process already-fit nodes. Leave to 'false' for better performance
+      minFontSize: 5,
+      maxFontSize: 120,
+      reProcess: true, // if true, textFit will re-process already-fit nodes. Leave to 'false' for better performance
       widthOnly: false, // if true, textFit will fit text to element width, regardless of text height
       suppressErrors: false // if true, will not print errors to console
     };

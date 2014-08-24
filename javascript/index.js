@@ -419,6 +419,15 @@ app.run(function($spMenu, $rootScope, $state, $window, ngDialog, gridSetupServic
             "orientation":"vertical"
         }
     }
+    $rootScope.windowWidth = $window.outerWidth;
+    angular.element($window).bind('resize',function(){
+        $rootScope.windowWidth = $window.outerWidth;
+        $rootScope.$apply('windowWidth');
+    });
+    angular.element($window).bind('resize',function(){
+        $rootScope.windowHeight = $window.innerHeight;
+        $rootScope.$apply('windowHeight');
+    });
 });
 app.service('gridSetupService', function () { 
     this.setup3img1big2smallRow = function(){
@@ -456,22 +465,20 @@ app.service('gridSetupService', function () {
     this.resizeOverlayText = function(){
         // dynamically resize text in overlays. 
         for(var item in document.getElementsByClassName('overlay')){
-            textFit(document.getElementsByClassName('overlay')[item], {maxFontSize: 120});
+            textFit(document.getElementsByClassName('overlay')[item], {maxFontSize: 100});
         }
+    },
+    this.resizePageHeight = function(){
+        var row_height = parseInt($(window).width()*0.5/3);
+        var num_rows = $('.row-3img-3across').length;
+        $('#grid').css('padding-bottom', (num_rows*row_height + 100) +'px');
     }
 });
 app.controller("racheltuController", function($scope){
 
 });
 app.controller("homeController", function($scope){
-    // function blink(selector){
-    //     $('#menuButton').fadeOut('slow', function(){
-    //         $(this).fadeIn('slow', function(){
-    //             blink(this);
-    //         });
-    //     });
-    // }
-    // blink('#menuButton');
+
 });
 app.controller("resumeController", function($scope){
 
@@ -479,25 +486,77 @@ app.controller("resumeController", function($scope){
 app.controller("aboutController", function($scope){
 
 });
-app.controller("digitalArtController", function($scope, gridSetupService, ngDialog){
+app.controller("digitalArtController", function($scope, gridSetupService, ngDialog, $rootScope){
     gridSetupService.setup3img3acrossRow();
     gridSetupService.setupOverlayHeights();
     gridSetupService.resizeOverlayText();
+    gridSetupService.resizePageHeight();
+    $rootScope.$watch('windowWidth',function(newVal, oldVal){
+        gridSetupService.setup3img3acrossRow();
+        gridSetupService.setupOverlayHeights();
+        gridSetupService.resizeOverlayText();
+        gridSetupService.resizePageHeight();
+    });
+    $rootScope.$watch('windowHeight',function(newVal, oldVal){
+        gridSetupService.setup3img3acrossRow();
+        gridSetupService.setupOverlayHeights();
+        gridSetupService.resizeOverlayText();
+        gridSetupService.resizePageHeight();
+    });
 });
-app.controller("studioArtController", function($scope, gridSetupService, ngDialog){
+app.controller("studioArtController", function($scope, gridSetupService, ngDialog, $rootScope){
     gridSetupService.setup3img3acrossRow();
     gridSetupService.setupOverlayHeights();
     gridSetupService.resizeOverlayText();
+    gridSetupService.resizePageHeight();
+    $rootScope.$watch('windowWidth',function(newVal, oldVal){
+        gridSetupService.setup3img3acrossRow();
+        gridSetupService.setupOverlayHeights();
+        gridSetupService.resizeOverlayText();
+        gridSetupService.resizePageHeight();
+    });
+    $rootScope.$watch('windowHeight',function(newVal, oldVal){
+        gridSetupService.setup3img3acrossRow();
+        gridSetupService.setupOverlayHeights();
+        gridSetupService.resizeOverlayText();
+        gridSetupService.resizePageHeight();
+    });
 });
-app.controller("mixedMediaController", function($scope, gridSetupService, ngDialog){
+app.controller("mixedMediaController", function($scope, gridSetupService, ngDialog, $rootScope){
     gridSetupService.setup3img3acrossRow();
     gridSetupService.setupOverlayHeights();
     gridSetupService.resizeOverlayText();
+    gridSetupService.resizePageHeight();
+    $rootScope.$watch('windowWidth',function(newVal, oldVal){
+        gridSetupService.setup3img3acrossRow();
+        gridSetupService.setupOverlayHeights();
+        gridSetupService.resizeOverlayText();
+        gridSetupService.resizePageHeight();
+    });
+    $rootScope.$watch('windowHeight',function(newVal, oldVal){
+        gridSetupService.setup3img3acrossRow();
+        gridSetupService.setupOverlayHeights();
+        gridSetupService.resizeOverlayText();
+        gridSetupService.resizePageHeight();
+    });
 });
-app.controller("installationController", function($scope, gridSetupService, ngDialog){
+app.controller("installationController", function($scope, gridSetupService, ngDialog, $rootScope){
     gridSetupService.setup3img3acrossRow();
     gridSetupService.setupOverlayHeights();
     gridSetupService.resizeOverlayText();
+    gridSetupService.resizePageHeight();
+    $rootScope.$watch('windowWidth',function(newVal, oldVal){
+        gridSetupService.setup3img3acrossRow();
+        gridSetupService.setupOverlayHeights();
+        gridSetupService.resizeOverlayText();
+        gridSetupService.resizePageHeight();
+    });
+    $rootScope.$watch('windowHeight',function(newVal, oldVal){
+        gridSetupService.setup3img3acrossRow();
+        gridSetupService.setupOverlayHeights();
+        gridSetupService.resizeOverlayText();
+        gridSetupService.resizePageHeight();
+    });
 });
 app.controller('popupController', function ($scope, ngDialog) {
     $scope.checkContainerOrientation = function(picture){
