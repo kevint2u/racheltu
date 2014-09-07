@@ -326,7 +326,22 @@ app.run(function($spMenu, $rootScope, $state, $window, ngDialog, gridSetupServic
             "description":"",
             "orientation":"square"
         },
-        "mixedmedia6.jpg":{
+        "mixedmedia6-2.jpg":{
+            "title":"mixedmedia6",
+            "description":"Filler Text Goes Here",
+            "orientation":"vertical"
+        },
+        "mixedmedia6-1.jpg":{
+            "title":"mixedmedia6",
+            "description":"Filler Text Goes Here",
+            "orientation":"horizontal"
+        },
+        "mixedmedia6-3.jpg":{
+            "title":"mixedmedia6",
+            "description":"Filler Text Goes Here",
+            "orientation":"vertical"
+        },
+        "mixedmedia6-4.jpg":{
             "title":"mixedmedia6",
             "description":"Filler Text Goes Here",
             "orientation":"vertical"
