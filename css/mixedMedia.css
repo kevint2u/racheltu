@@ -114,6 +114,10 @@
     background: url("../resources/thumbnail-images/mixedmedia/mixedmedia8.jpg") no-repeat center;
     background-size:auto 100%;
 }
+#img-container-9{
+    background: url("../resources/thumbnail-images/mixedmedia/mixedmedia9-1.jpg") no-repeat center;
+    background-size:auto 100%;
+}
 
 .footer{
     height: 100px;
