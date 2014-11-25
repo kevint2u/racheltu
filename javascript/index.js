@@ -90,7 +90,7 @@ app.run(function($spMenu, $rootScope, $state, $window, ngDialog, gridSetupServic
         "digitalart1.jpg":{
             "title":"digitalart1",
             "description":"Filler Text Goes Here",
-            "orientation":"vertical"
+            "orientation":"horizontal"
         },
         "digitalart2-1.jpg":{
             "title":"digitalart2",
@@ -100,7 +100,7 @@ app.run(function($spMenu, $rootScope, $state, $window, ngDialog, gridSetupServic
         "digitalart2-2.jpg":{
             "title":"",
             "description":"",
-            "orientation":"horizontal"
+            "orientation":"vertical"
         },
         "digitalart2-3.jpg":{
             "title":"",
@@ -140,8 +140,35 @@ app.run(function($spMenu, $rootScope, $state, $window, ngDialog, gridSetupServic
         "digitalart7.jpg":{
             "title":"digitalart7",
             "description":"Filler Text Goes Here",
+            "orientation":"vertical"       
+        },
+        "digitalart8.jpg":{
+            "title":"digitalart3",
+            "description":"Filler Text Goes Here",
             "orientation":"horizontal"
         },
+        "digitalart9.jpg":{
+            "title":"digitalart4",
+            "description":"Filler Text Goes Here",
+            "orientation":"vertical"
+        },
+        "digitalart10.jpg":{
+            "title":"digitalart5",
+            "description":"Filler Text Goes Here",
+            "orientation":"vertical"
+        },
+        "digitalart11.jpg":{
+            "title":"digitalart6",
+            "description":"Filler Text Goes Here",
+            "orientation":"horizontal"
+        },
+        "digitalart12.jpg":{
+            "title":"digitalart7",
+            "description":"Filler Text Goes Here",
+            "orientation":"square"
+        },
+
+
 
 
         "studioart1.jpg":{
@@ -326,7 +353,22 @@ app.run(function($spMenu, $rootScope, $state, $window, ngDialog, gridSetupServic
             "description":"",
             "orientation":"square"
         },
-        "mixedmedia6.jpg":{
+        "mixedmedia6-2.jpg":{
+            "title":"mixedmedia6",
+            "description":"Filler Text Goes Here",
+            "orientation":"vertical"
+        },
+        "mixedmedia6-1.jpg":{
+            "title":"mixedmedia6",
+            "description":"Filler Text Goes Here",
+            "orientation":"horizontal"
+        },
+        "mixedmedia6-3.jpg":{
+            "title":"mixedmedia6",
+            "description":"Filler Text Goes Here",
+            "orientation":"vertical"
+        },
+        "mixedmedia6-4.jpg":{
             "title":"mixedmedia6",
             "description":"Filler Text Goes Here",
             "orientation":"vertical"
@@ -359,6 +401,21 @@ app.run(function($spMenu, $rootScope, $state, $window, ngDialog, gridSetupServic
         "mixedmedia8.jpg":{
             "title":"mixedmedia8",
             "description":"Filler Text Goes Here",
+            "orientation":"horizontal"
+        },
+        "mixedmedia9-1.jpg":{
+            "title":"Filler Text Goes Here",
+            "description":"",
+            "orientation":"horizontal"
+        },
+        "mixedmedia9-2.jpg":{
+            "title":"",
+            "description":"",
+            "orientation":"vertical"
+        },
+        "mixedmedia9-3.jpg":{
+            "title":"",
+            "description":"",
             "orientation":"horizontal"
         },
 

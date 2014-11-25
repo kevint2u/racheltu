@@ -84,7 +84,7 @@
 
 #img-container-1{
     background: url("../resources/thumbnail-images/digitalart/digitalart1.jpg") no-repeat center;
-    background-size:100%;
+    background-size:auto 100%;
 }
 #img-container-2{
     background: url("../resources/thumbnail-images/digitalart/digitalart2-1.jpg") no-repeat center;
@@ -92,7 +92,7 @@
 }
 #img-container-3{
     background: url("../resources/thumbnail-images/digitalart/digitalart3.jpg") no-repeat center;
-    background-size:auto 100%;
+    background-size: 100%;
 }
 #img-container-4{
     background: url("../resources/thumbnail-images/digitalart/digitalart4.jpg") no-repeat center;
@@ -108,6 +108,26 @@
 }
 #img-container-7{
     background: url("../resources/thumbnail-images/digitalart/digitalart7.jpg") no-repeat center;
+    background-size: 100%;
+}
+#img-container-8{
+    background: url("../resources/thumbnail-images/digitalart/digitalart8.jpg") no-repeat center;
+    background-size:auto 100%;
+}
+#img-container-9{
+    background: url("../resources/thumbnail-images/digitalart/digitalart9.jpg") no-repeat center;
+    background-size: 100%;
+}
+#img-container-10{
+    background: url("../resources/thumbnail-images/digitalart/digitalart10.jpg") no-repeat center;
+    background-size: 100%;
+}
+#img-container-11{
+    background: url("../resources/thumbnail-images/digitalart/digitalart11.jpg") no-repeat center;
+    background-size:auto 100%;
+}
+#img-container-12{
+    background: url("../resources/thumbnail-images/digitalart/digitalart12.jpg") no-repeat center;
     background-size:auto 100%;
 }
 
